@@ -1,10 +1,12 @@
-import React from "react";
+import {useState} from "react";
 import "./MobileNav.css";
 import logo from './../../images/jrv-logo.avif';
 import Image from 'next/image';
 
 
-function MobileNav({toggleMobNav}) {
+function MobileNav() {
+const [isHidden, setIsHidden] = useState(true)
+
 
   return (
     <div className="MobileNav">
