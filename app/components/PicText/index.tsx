@@ -16,7 +16,7 @@ interface iProps {
     img: ImageData;
     title: string;
     text: Array<string>;
-    right: boolean;
+    right: boolean | undefined;
     link: LinkData;
     box: boolean;
 }
@@ -33,8 +33,8 @@ export default function PicText({ img, title, text, right, link, box = false }:i
   const styleObj = {
     picWidth: img.picWidth || 'auto',
     objectFit: img.fit,
-    position: isImgSticky ? "sticky" : "relative",
-    top: isImgSticky ? "15vh" : null
+    position: (isImgSticky ? "sticky" : "relative") as "sticky" | "relative",
+    top: isImgSticky ? "15vh" : undefined
   }
 
 

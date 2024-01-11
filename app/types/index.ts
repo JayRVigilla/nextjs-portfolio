@@ -1,10 +1,11 @@
+import { StaticImageData } from "next/image";
 
 
 export interface ImageData {
-  src: string;
+  src: StaticImageData;
   alt: string;
   picWidth: string;
-  fit?: string;
+  fit?: "cover" | "contain" |  "fill" | undefined;
 }
 
 export interface LinkData {
