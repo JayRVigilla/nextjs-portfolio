@@ -3,6 +3,7 @@ import { usePathname } from 'next/navigation';
 import './Navigation.css';
 import {pages} from './content'
 import Image from 'next/image';
+import Link from 'next/link';
 
 /**
  * Navigation Bar:
@@ -13,7 +14,7 @@ import Image from 'next/image';
 interface iProps{
   navIn: boolean;
 }
-const urlFangs = window.location.href.split('/')
+
 
 function Navigation({ navIn }: iProps) {
   const pathname = usePathname()
@@ -30,7 +31,7 @@ function Navigation({ navIn }: iProps) {
         <div className='nav links'>
           {pages.map((p, i) => {
             return pathname !== p.href.substring(1) &&
-              <a key={`navlink-${i}`} href={p.href} target={p.target || "_self"}>{p.name}</a>
+              <Link key={`navlink-${i}`} href={p.href} target={p.target || "_self"}>{p.name}</Link>
           })}
         </div>
           <p className="h1"><b>jayVigilla()</b></p>

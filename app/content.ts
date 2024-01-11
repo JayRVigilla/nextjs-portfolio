@@ -1,15 +1,15 @@
-import { LinkData, ImageData } from '@/app/types';
+import { ImageData, LinkData } from "./types"
 
-interface Tease {
+interface Teaser {
   img: ImageData;
   title: string;
-  text: string[],
+  text: string[];
   right: boolean | undefined;
   link: LinkData;
-  box?: boolean | undefined;
+  box?: boolean
 }
 
-const blogTease: Tease = {
+const blogTease: Teaser = {
   img: {
     src: "/images/jay-desk2.avif",
     alt: 'Jay at computer desk',
@@ -25,7 +25,7 @@ const blogTease: Tease = {
   }
 }
 
-const projTease: Tease = {
+const projTease: Teaser = {
   img: {
     src: "/images/notebook.avif",
     alt: 'project notebook',
@@ -42,7 +42,7 @@ const projTease: Tease = {
   box: true
 }
 
-const contactTease: Tease = {
+const contactTease: Teaser = {
   img: {
     src: "/images/social-phone.avif",
     alt: 'smart phone ready to send a message',
@@ -58,4 +58,4 @@ const contactTease: Tease = {
   }
 }
 
-export const teasers: Tease[] = [blogTease, projTease, contactTease]
+export const teasers = [blogTease, projTease, contactTease]

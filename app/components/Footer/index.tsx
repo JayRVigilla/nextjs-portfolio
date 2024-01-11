@@ -4,6 +4,12 @@ import {links} from './content'
 
 function Footer() {
   return (
+    <>
+        {/* CDN for FontAwesome icons in the Footer
+        // TODO: add this to Footer component only?
+      */}
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'></link>
+
     <footer id="Footer">
       <div className="content">
         <div>
@@ -20,7 +26,8 @@ function Footer() {
         </div>
       </div>
       <p>Designed by Jay Vigilla</p>
-    </footer>
+      </footer>
+      </>
   );
 }
 

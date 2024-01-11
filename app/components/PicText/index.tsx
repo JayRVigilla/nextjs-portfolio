@@ -17,13 +17,11 @@ interface iProps {
     title: string;
     text: Array<string>;
     right: boolean | undefined;
-    link: LinkData;
+    link?: LinkData;
     box?: boolean;
 }
 export default function PicText({ img, title, text, right, link, box = false }:iProps) {
   const isImgSticky = false
-  // const [isImgSticky, setIsImgSticky] = useState(false)
-  // const [parentDimensions, setParentDimensions] = useState(undefined)
 
   const makePs = (arr: string[]) =>
     arr.map(str => {

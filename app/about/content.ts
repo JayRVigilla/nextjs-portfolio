@@ -1,8 +1,9 @@
-import jayPic from './../../images/jay-green-wall.avif';
+import { ImageData } from "@/app/types"
 
-export const aboutObj = {
+export const aboutObj: {img: ImageData, text: string[], right: boolean} = {
   img: {
-    src: jayPic,
+    // src: jayPic,
+    src: "/images/jay-green-wall.avif",
     alt: 'jay vigilla',
     picWidth: '40%',
     fit: "fill"
