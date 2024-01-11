@@ -9,7 +9,7 @@ export default function Main() {
   return (
     <>
     <main className={styles.main}>
-      <div className="App">
+      {/* <div className="App"> */}
       {/* <div id="not-nav" > */}
 {/* // TODO: put routes in here */}
       <div id="Home">
@@ -47,7 +47,7 @@ export default function Main() {
       })}
           </div>
           {/* </div> */}
-      </div>
+      {/* </div> */}
 
     </main>
     </>

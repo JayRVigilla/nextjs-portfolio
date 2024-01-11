@@ -6,7 +6,7 @@
   text-indent: 2rem;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: --mobile-width-min){
   #About{
     margin: 0;
   }

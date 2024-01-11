@@ -15,6 +15,9 @@
   --frosted: rgba(255,255,255, 0.55);
   --lt-frosted: rgba(255,255,255, 0.20);
   --br-orange09: #EB580219;
+
+  --mobile-width-max: 800px;
+  --mobile-width-min: 500px;
 }
 
 /* #root {
@@ -22,8 +25,8 @@
 } */
 
 .App {
-  text-align: center;
-  min-height: 100vh;
+  /* text-align: center;
+  min-height: 100vh; */
 }
 
 .Navigation {

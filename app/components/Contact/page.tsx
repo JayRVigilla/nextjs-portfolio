@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import MetaTags from "react-meta-tags";
+import React, { useState, DetailedHTMLProps, TextareaHTMLAttributes } from "react";
+// import HTMLTextAreaElement from ""
 import "./Contact.css";
 import notebook from './../../images/jay-desk2.avif'
 
@@ -37,14 +37,14 @@ function Contact() {
   return (
     <section className="Contact">
 
-    <MetaTags>
+    {/* <MetaTags>
       <title>Contact | Jay Vigilla | Web Developer | Software Engineer</title>
       <meta name="description" content="I'd love to talk to you about projects (both fun and professional) or to talk about tech, food, and rescue dogs! Email me at jayrvigilla@gmail.com" />
       <meta property="og:title" content="Contact | Jay Vigilla | Web Developer | Software Engineer " />
       <meta property="og:description" content="I'd love to talk to you about projects (both fun and professional) or to talk about tech, food, and rescue dogs! Email me at jayrvigilla@gmail.com" />
       <meta property="og:image" content={notebook} />
       <link rel="canonical" href="http://jayvigilla.com/contact"/>
-    </MetaTags>
+    </MetaTags> */}
 
       <h1>Contact</h1>
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -54,7 +54,7 @@ function Contact() {
             type="text"
             name="name"
             placeholder="name"
-            size="35"
+            size={35}
             value={formData.name}
             onChange={handleChange}
             />
@@ -64,7 +64,7 @@ function Contact() {
             type="text"
             name="email"
             placeholder="email"
-            size="35"
+            size={35}
             value={formData.email}
             onChange={handleChange}
             />
@@ -74,18 +74,18 @@ function Contact() {
             type="text"
             name="phone"
             placeholder="phone"
-            size="35"
+            size={35}
             value={formData.phone}
             onChange={handleChange}
           />
 
         <label htmlFor="comment">Comment</label>
           <textarea
-            type="text"
+            type={"text" as DetailedHTMLProps<TextareaHTMLAttributes<HTMLTextAreaElement>>}
             name="comment"
             placeholder="comment"
-            cols="30"
-            rows="10"
+            cols={30}
+            rows={10}
             value={formData.comment}
             onChange={handleChange}
             />

@@ -1,4 +1,4 @@
-import React from 'react';
+'use client'
 import './Card.css';
 import Image from 'next/image';
 import { ImageData } from '@/app/types';

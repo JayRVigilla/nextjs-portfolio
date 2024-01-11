@@ -44,7 +44,7 @@
   z-index: -2;
   width: 100%;
   height: 100%;
-  min-width: 400px;
+  /* min-width: 400px; */
   object-fit: fit;
   animation: fadeIn ease 5s;
   -webkit-animation: fadeIn ease 5s;
@@ -108,13 +108,13 @@
     100% {opacity:1;}
     }
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: --mobile-width-max){
       #Home .headline{
         bottom: 50%;
       }
     }
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: --mobile-width-min){
       #Home .headline{
         bottom: 30%;
         left: 0;

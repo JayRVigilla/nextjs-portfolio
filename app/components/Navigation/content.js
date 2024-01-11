@@ -3,5 +3,5 @@ export const pages = [
   { href: "/projects", name: "Projects" },
   { href: "/about", name: "About" },
   { href: "http://babbledotlog.jayvigilla.com", name: "Blog", target: "_blank" },
-  { href: "/contact", name: "Contact" },
+  // { href: "/contact", name: "Contact" },
 ]
