@@ -18,7 +18,7 @@ interface iProps {
     text: Array<string>;
     right: boolean | undefined;
     link: LinkData;
-    box: boolean;
+    box?: boolean;
 }
 export default function PicText({ img, title, text, right, link, box = false }:iProps) {
   const isImgSticky = false

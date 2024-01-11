@@ -1,8 +1,18 @@
 import notebook from './../../images/notebook.avif'
 import messager from './../../images/social-phone.avif'
 import jayDesk from './../../images/jay-desk2.avif'
+import { LinkData, ImageData } from '@/app/types';
 
-const blogTease = {
+interface Tease {
+  img: ImageData;
+  title: string;
+  text: string[],
+  right: boolean | undefined;
+  link: LinkData;
+  box?: boolean | undefined;
+}
+
+const blogTease: Tease = {
   img: {
     src: jayDesk,
     alt: 'Jay at computer desk',
@@ -18,7 +28,7 @@ const blogTease = {
   }
 }
 
-const projTease = {
+const projTease: Tease = {
   img: {
     src: notebook,
     alt: 'project notebook',
@@ -35,7 +45,7 @@ const projTease = {
   box: true
 }
 
-const contactTease = {
+const contactTease: Tease = {
   img: {
     src: messager,
     alt: 'smart phone ready to send a message',
@@ -51,4 +61,4 @@ const contactTease = {
   }
 }
 
-export const teasers = [blogTease, projTease, contactTease]
+export const teasers: Tease[] = [blogTease, projTease, contactTease]
