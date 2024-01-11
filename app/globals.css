@@ -1,4 +1,121 @@
 :root {
+  --brown-dark: rgb(134,102,89);
+  /* --lt-blue: rgb(222,232, 233); */
+  --lt-blue: #dde8e946;
+  /* --lt-blue: rgba(222,232, 233, .5) */
+  --blue: rgb(106,137,146); /* 00779c for brighter */
+  --br-blue: '#00779C';
+  --brown: rgb(186,171,151);
+  --orange: rgb(173,104,62); /* 188,100,49 or #eb5802 for brighter */
+  --br-orange: #eb5802;
+  --teal: rgb(53,101,111); /* 63,119,129 of 00b4d4 for brighter*/
+  --lt-teal: rgb(151,166,173);
+  --br-teal: #00b4d4;
+  --white: rgb(220,214,207);
+  --frosted: rgba(255,255,255, 0.55);
+  --lt-frosted: rgba(255,255,255, 0.20);
+  --br-orange09: #EB580219;
+}
+
+#root {
+  width: 100%;
+}
+
+
+#not-nav {
+  width: 100%;
+  margin-top: calc(55px + 1rem);
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body {
+  color: var(--teal);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  /* background-color: var(--br-orange09); */
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  font-display: swap;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+    color: var(--br-orange);
+}
+
+a {
+  color: var(--br-orange);
+  text-align: justify;
+}
+
+a:visited {
+  color: var(--orange);
+}
+
+p, li, ul{
+  list-style-type: none;
+  margin: .3em 0;
+}
+
+h1,h2,h3{
+  color: var(--br-teal);
+  text-shadow: .5px .5px black;
+}
+
+section{
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.text{
+  text-indent: 2em;
+}
+
+button, .button{
+  background-color: var(--br-orange);
+  margin: 2rem 1rem;
+  padding: .75rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+button{
+  padding: 0;
+  font-size: large;
+  font-weight: bolder;
+}
+
+button:hover, .button:hover{
+  color: var(--teal);
+  opacity: 0.8;
+  box-shadow: 2px 4px var(--br-teal);
+}
+
+button:visited, .button:visited{
+  color: white;
+}
+
+button:active, .button:active{
+  background-color: var(--lt-teal);
+  color: var(--br-orange);
+}
+
+img{
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -104,4 +221,5 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */
+

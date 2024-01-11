@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.Navigation{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;}

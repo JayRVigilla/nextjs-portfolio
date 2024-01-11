@@ -1,0 +1,9 @@
+.Links{
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: bolder;
+  margin-right: 1.5em;
+}

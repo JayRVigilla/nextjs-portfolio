@@ -1,0 +1,13 @@
+#About{
+  margin: 0 1rem;
+}
+
+#About p{
+  text-indent: 2rem;
+}
+
+@media screen and (max-width: 500px){
+  #About{
+    margin: 0;
+  }
+}
