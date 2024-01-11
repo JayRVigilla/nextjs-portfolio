@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from '../Card';
 import MetaTags from "react-meta-tags";
-import { v4 as uuid } from 'uuid';
 import './Projects.css';
 import jayPic from './../../images/jay-green-wall.avif';
 import {projects, experiments, games} from './content'
@@ -10,7 +9,7 @@ function Projects() {
 
   const projectCards = (proj) => proj.map(p =>
     <Card
-      key={uuid()}
+      key={p.title}
       title={p.title}
       img={p.img}
       desc={p.desc}

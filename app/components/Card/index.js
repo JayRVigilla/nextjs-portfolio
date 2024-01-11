@@ -1,5 +1,4 @@
 import React from 'react';
-// import { v4 as uuid } from 'uuid';
 import './Card.css';
 import Image from 'next/image';
 

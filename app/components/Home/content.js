@@ -1,10 +1,11 @@
 import notebook from './../../images/notebook.avif'
 import messager from './../../images/social-phone.avif'
-import jayDesk from './../../images/jay-desk2.avif'
+// import jayDesk from './../../images/jay-desk2.avif'
 
 const blogTease = {
   img: {
-    src: jayDesk,
+    // src: jayDesk,
+    src: "./images/jay-desk2.avif",
     alt: 'Jay at computer desk',
     picWidth: '45%',
     fit: "cover",
@@ -20,7 +21,8 @@ const blogTease = {
 
 const projTease = {
   img: {
-    src: notebook,
+    // src: notebook,
+    src: "./images/notebook.avif",
     alt: 'project notebook',
     picWidth: '45%',
     fit: "contain",
@@ -37,7 +39,8 @@ const projTease = {
 
 const contactTease = {
   img: {
-    src: messager,
+    // src: messager,
+    src: "./images/messager",
     alt: 'smart phone ready to send a message',
     picWidth: '25%',
     fit: "cover",

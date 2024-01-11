@@ -1,23 +1,27 @@
 // import MetaTags from 'react-meta-tags';
+import React, {useState} from 'react'
 import Image from 'next/image';
 import './Home.css';
-import PicText from './../../components/PicText';
-import coffeeCup from './../../images/coffee-cup.avif';
+import PicText from '@/app/components/PicText';
+import coffeeCup from '@/app/images/coffee-cup.avif';
 import { teasers } from './content';
-import notebook from './../../images/notebook.avif'
+import Navigation from '@/app/components/Navigation';
+import MobileNav from '@/app/components/Navigation'
 
-function Home() {
+export const HomeContent = ()=> {
+  const [navIn, setNavIn] = useState(false)
+  const toggleMobNav = () => setNavIn(!navIn)
+  const closeMobNav = () => navIn && setNavIn(false)
 
   return (
+        <div className="App">
+      {/* <Navigation navIn={navIn} hideNav={closeMobNav}/>
+      <MobileNav toggleMobNav={toggleMobNav}/> */}
+      <div id="not-nav" onClick={closeMobNav}>
+{/* // TODO: put routes in here */}
+      </div>
+      {/* <Footer /> */}
     <div id="Home">
-      {/* <MetaTags>
-        <title>Jay Vigilla | Web Developer | Software Engineer | San Francisco</title>
-        <meta name="description" content="Jay Vigilla is a Software Engineer based in the San Francisco Bay Area experienced in JavaScript(React-Redux, NodeJS), Python, SQL, and responsive design" />
-        <meta property="og:title" content="Jay Vigilla | Web Developer | Software Engineer | San Francisco" />
-        <meta property="og:description" content="San Francisco-based Software Engineer versed in JavaScript(React-Redux, NodeJS), Python, SQL, and responsive design." />
-        <meta property="og:image" content={notebook} />
-        <link rel="canonical" href="http://jayvigilla.com" />
-      </MetaTags> */}
       <header>
         <div className="home container">
           <Image src={coffeeCup} alt="coffee cup by Annie Spratt"/>
@@ -49,8 +53,7 @@ function Home() {
           </section>
         )
       })}
-    </div>
+      </div>
+      </div>
   );
 }
-
-export default Home;

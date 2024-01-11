@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 
 export interface ImageData {
-  src: StaticImageData;
+  src: string | StaticImageData;
   alt: string;
   picWidth: string;
   fit?: "cover" | "contain" |  "fill" | undefined;

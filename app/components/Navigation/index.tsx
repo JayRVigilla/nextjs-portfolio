@@ -9,8 +9,12 @@ import Image from 'next/image';
  *    - creates links based on linkArr
  *    - logo and company name on opposite end of nav bar
  */
+
+interface iProps{
+  navIn: boolean;
+}
 const urlFangs = window.location.href.split('/')
-function Navigation({ navIn }) {
+function Navigation({ navIn }: iProps) {
   const xtra = navIn ? 'slide-in' : ''
 
   return (
