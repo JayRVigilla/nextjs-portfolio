@@ -2,6 +2,7 @@ import React from 'react';
 import './Navigation.css';
 import logo from './../../images/jrv-logo.avif'
 import {pages} from './content'
+import Image from 'next/image';
 
 /**
  * Navigation Bar:
@@ -16,7 +17,7 @@ function Navigation({ navIn }) {
     <nav id="Navigation" className={`${xtra}`}>
       <header className="nav header">
         <div className="nav logo">
-          <a href="/"><img src={logo} alt="jayVigilla()" /></a>
+          <a href="/"><Image src={logo} alt="jayVigilla()" /></a>
         </div>
 
         <div className='nav links'>

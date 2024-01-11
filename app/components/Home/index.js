@@ -5,6 +5,8 @@ import PicText from './../PicText';
 import coffeeCup from './../../images/coffee-cup.avif';
 import { teasers } from './content';
 import notebook from './../../images/notebook.avif'
+import Image from 'next/image';
+
 
 function Home() {
 
@@ -20,7 +22,7 @@ function Home() {
       </MetaTags>
       <header>
         <div className="home container">
-          <img src={coffeeCup} alt="coffee cup by Annie Spratt"/>
+          <Image src={coffeeCup} alt="coffee cup by Annie Spratt"/>
           <div className="headline">
             <h1>Hi, my name is Jay Vigilla.<br /><code>#IBuildThingsWithComputers</code></h1>
           </div>
@@ -28,10 +30,10 @@ function Home() {
       </header>
 
       <section className="teaser about">
-        <h2>Who's this?</h2>
+        <h2>{`Who's this?`}</h2>
         <div className="content">
-          <p>Today I'm a Software Engineer... and a coffee fiend, doggy daddy, human dad, former restaurant cook, recovering comic book collector, maker of longer-than-necessary lists, and lover of puns.</p>
-          <p>I got my Bachelor's in Psychology and started cooking in restaurants because I loved the closeness of my kitchen families and the adrenaline rush of restaurant service!</p>
+          <p>{`Today I'm a Software Engineer... and a coffee fiend, doggy daddy, human dad, former restaurant cook, recovering comic book collector, maker of longer-than-necessary lists, and lover of puns.`}</p>
+          <p>{`I got my Bachelor's in Psychology and started cooking in restaurants because I loved the closeness of my kitchen families and the adrenaline rush of restaurant service!`}</p>
           <a className="button" href="/about">Ready to know more?</a>
         </div>
       </section>

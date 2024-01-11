@@ -1,6 +1,7 @@
 import React from 'react';
-import { v4 as uuid } from 'uuid';
+// import { v4 as uuid } from 'uuid';
 import './Card.css';
+import Image from 'next/image';
 
 /**
  * Container for picture and div holding an h2 and text
@@ -19,14 +20,14 @@ function Card({ title, img, desc, tech, links}) {
 
   const genLinks =
     links.map(item => {
-      return (<a key={ uuid()}href={item.url} target="_blank" rel="noreferrer">{item.type}</a>)
+      return (<a key={ item.url.substring(8,14)}href={item.url} target="_blank" rel="noreferrer">{item.type}</a>)
     })
 
   return (
     <div className="Card">
       <div className="top">
         <h3>{title}</h3>
-        <img src={img.src} alt={img.alt} />
+        <Image src={img.src} alt={img.alt} />
       </div>
 
       <div className="content">

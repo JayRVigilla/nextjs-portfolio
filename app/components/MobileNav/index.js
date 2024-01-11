@@ -1,6 +1,8 @@
 import React from "react";
 import "./MobileNav.css";
 import logo from './../../images/jrv-logo.avif';
+import Image from 'next/image';
+
 
 function MobileNav({toggleMobNav}) {
 
@@ -8,7 +10,7 @@ function MobileNav({toggleMobNav}) {
     <div className="MobileNav">
       <div className="content">
         <button onClick={toggleMobNav}>
-          <img src={`${logo}`} alt="jay vigilla logo" />
+          <Image src={`${logo}`} alt="jay vigilla logo" />
         </button>
         <p className="h1"><b>jayVigilla()</b></p>
       </div>
