@@ -1,6 +1,8 @@
 import React from 'react';
 import './Card.css';
 import Image from 'next/image';
+import { ImageData } from '@/app/types';
+import { Project } from '@/app/projects/content';
 
 /**
  * Container for picture and div holding an h2 and text
@@ -14,7 +16,7 @@ import Image from 'next/image';
  */
 
 
-function Card({ title, img, desc, tech, links}) {
+function Card({ title, img, desc, tech, links}: Project) {
   const techStr = tech.join(' | ');
 
   const genLinks =
@@ -26,7 +28,7 @@ function Card({ title, img, desc, tech, links}) {
     <div className="Card">
       <div className="top">
         <h3>{title}</h3>
-        <Image src={img.src} alt={img.alt} />
+        <Image src={img.src} alt={img.alt} width={400} height={400} />
       </div>
 
       <div className="content">

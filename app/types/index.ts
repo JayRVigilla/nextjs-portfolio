@@ -4,7 +4,7 @@ import { StaticImageData } from "next/image";
 export interface ImageData {
   src: string | StaticImageData;
   alt: string;
-  picWidth: string;
+  picWidth?: string;
   fit?: "cover" | "contain" |  "fill" | undefined;
 }
 

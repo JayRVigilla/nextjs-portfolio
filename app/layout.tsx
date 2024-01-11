@@ -19,8 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navigation navIn={ false} />
+        <Navigation navIn={false} />
+        <div id="not-nav" >
+
         {children}
+        </div>
         <Footer/>
       </body>
     </html>

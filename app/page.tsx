@@ -10,7 +10,7 @@ export default function Main() {
     <>
     <main className={styles.main}>
       <div className="App">
-      <div id="not-nav" >
+      {/* <div id="not-nav" > */}
 {/* // TODO: put routes in here */}
       <div id="Home">
       <header>
@@ -46,7 +46,7 @@ export default function Main() {
         )
       })}
           </div>
-          </div>
+          {/* </div> */}
       </div>
 
     </main>

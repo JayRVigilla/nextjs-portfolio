@@ -1,13 +1,12 @@
 import React from 'react';
-import Card from '../Card';
-import MetaTags from "react-meta-tags";
-import './Projects.css';
-import jayPic from './../../images/jay-green-wall.avif';
-import {projects, experiments, games} from './content'
+import Card from '@/app/components/Card';
+// import MetaTags from "react-meta-tags";
+import {projects, experiments, games, Project} from './content'
+import '@/app/projects/Projects.css';
 
 function Projects() {
 
-  const projectCards = (proj) => proj.map(p =>
+  const projectCards = (proj: Project[]) => proj.map(p =>
     <Card
       key={p.title}
       title={p.title}
@@ -20,14 +19,14 @@ function Projects() {
 
   return (
     <div id="Projects">
-      <MetaTags>
+      {/* <MetaTags>
         <title>Portfolio | Jay Vigilla | Web Developer | Software Engineer</title>
         <meta name="description" content="Looking for a Software Engineer versed in JavaScript(React-Redux, NodeJS), Python, SQL, SEO, and responsive design?" />
         <meta property="og:title" content="Portfolio | Jay Vigilla | Web Developer | Software Engineer " />
         <meta property="og:description" content="Looking for a Software Engineer versed in JavaScript(React-Redux, NodeJS), Python, SQL, SEO, and responsive design?" />
         <meta property="og:image" content={jayPic} />
         <link rel="canonical" href="http://jayvigilla.com/projects" />
-      </MetaTags>
+      </MetaTags> */}
 
       <h1>Projects</h1>
       <section className="projects">

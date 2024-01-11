@@ -1,19 +1,34 @@
-import zhanga from "./../../images/ZhangGa-demo.gif";
-import movieSearch from "./../../images/movie-search-demo.gif";
-import warbler from "./../../images/warbler-logo.avif";
-import jeopardy from "./../../images/jeopardy-demo.gif";
-import NamePicker from "./../../images/namepicker.gif";
-import whackAMole from "./../../images/whackAMole.avif";
-import crocodileDentist from "./../../images/crocodileDentist.avif";
-import semanticButtons from "./../../images/semanticButtons.avif";
-import dayTimeSlotPicker from "./../../images/dayTimeSlotPicker.avif";
+// import zhanga from "./../../images/ZhangGa-demo.gif";
+// import movieSearch from "./../../images/movie-search-demo.gif";
+// import warbler from "./../../images/warbler-logo.avif";
+// import jeopardy from "./../../images/jeopardy-demo.gif";
+// import NamePicker from "./../../images/namepicker.gif";
+// import whackAMole from "./../../images/whackAMole.avif";
+// import crocodileDentist from "./../../images/crocodileDentist.avif";
+// import semanticButtons from "./../../images/semanticButtons.avif";
+// import dayTimeSlotPicker from "./../../images/dayTimeSlotPicker.avif";
+import { ImageData } from "../types";
+
+export interface Project{
+  title: string;
+  img: ImageData;
+  desc: string;
+  tech: string[];
+  links: ProjectLink[];
+}
+
+export interface ProjectLink {
+  type: string;
+  url: string;
+
+}
 
 export const projects = [
   {
     title: "NamePicker",
 
     img: {
-      src: NamePicker,
+      src: "/images/namepicker.gif",
       alt: "NamePicker demo gif"
     },
     desc: "I'm a proud parent that wants to make sure my own Hermione Granger doesn't feel stifled by teachers not calling on her when her hand is up first and has been up first for every question... all... month... long. Desktop Electron app using ReactJS.",
@@ -28,7 +43,7 @@ export const projects = [
   {
     title: "Warbler",
     img: {
-      src: warbler,
+      src: "/images/warbler-logo.avif",
       alt: "warbler cartoon"
     },
     desc: "An X(formerly Twitter)-clone written in Python utilizing Jinja server-side rendering. Full Stack project made at Rithm School.",
@@ -50,7 +65,7 @@ export const projects = [
   {
     title: "MovieSearch",
     img: {
-      src: movieSearch,
+      src: "/images/movie-search-demo.gif",
       alt: "movie search gif"
     },
     desc: "A Node.js project making HTTP requests to an  IMDB API for movie data. A toy project for testing RapidAPIs",
@@ -66,7 +81,7 @@ export const projects = [
   {
     title: "ZhangGa",
     img: {
-      src: zhanga,
+      src: "/images/ZhangGa-demo.gif",
       alt: "Tell your story"
     },
     desc: "Full Stack Project. A blogging app with a React frontend and Node-Express server. Project at Rithm School introducing Redux",
@@ -82,72 +97,14 @@ export const projects = [
       //   url: "https://zhangga-demo.surge.sh/"
       // }
     ]
-  },
-  // {
-  //   title: "Jeopadry!",
-  //   img: {
-  //     src: jeopardy,
-  //     alt: "Jeopardy gameplay"
-  //   },
-  //   desc: "Frontend Project made at Rithm School using jQuery and the API jService",
-  //   tech: ["JavaScript", "jQuery", "HTML"],
-  //   links: [
-  //     {
-  //       type: "Github",
-  //       url: "https://github.com/JayRVigilla/jeopardy"
-  //     },
-  //     // TODO: fix logic issue on submitting answer and redeploy
-  //     // {
-  //     //   type: "Link",
-  //     //   url: "http://jih-parody-demo.surge.sh/"
-  //     // }
-  //   ]
-  // },
+  }
 ]
 
 export const experiments = [
-  // {
-  //   title: "Whack-a-Mole",
-  //   img: {
-  //     src: whackAMole,
-  //     alt: "test alt"
-  //   },
-  //   desc: "A Whack-a-Mole game made in React on CodeSandbox",
-  //   tech: ["JavaScript", "React"],
-  //   links:
-  //     [
-  //       {
-  //         type: "CodeSandbox",
-  //         url: "https://codesandbox.io/s/jayvigillawhackamole-50k1in"
-  //       },
-  //       {
-  //         type: "Link",
-  //         url: "https://50k1in.csb.app/"
-  //       }]
-  // },
-  // {
-  //   title: "Crocodile Dentist",
-  //   img: {
-  //     src: crocodileDentist,
-  //     alt: "CSS crocodile missing teeth"
-  //   },
-  //   desc: "vanillaJS Crocodile Dentist",
-  //   tech: ["JavaScript", "HTML", "CSS"],
-  //   links:
-  //     [
-  //       {
-  //         type: "Github",
-  //         url: "https://github.com/JayRVigilla/crocodileDentist"
-  //       },
-  //       {
-  //         type: "CodeSandbox",
-  //         url: "https://codesandbox.io/s/jayvigillacrocodiledentist-2o67ug?file=/script.js"
-  //       }]
-  // },
   {
     title: "Semantic HTML Buttons",
     img: {
-      src: semanticButtons,
+      src: "/images/semanticButtons.avif",
       alt: "CodeSandbox screen shot"
     },
     desc: "A study in semantic HTML for a blog post",
@@ -166,7 +123,7 @@ export const experiments = [
   {
     title: "DateTimePicker",
     img: {
-      src: dayTimeSlotPicker,
+      src: "/images/dayTimeSlotPicker.avif",
       alt: "CodeSandbox screenshot"
     },
     desc: "Rough draft of a time picker before integrating API calls for a work project.",
@@ -208,7 +165,7 @@ export const games = [
   {
     title: "Whack-a-Mole",
     img: {
-      src: whackAMole,
+      src: "/images/whackAMole.avif",
       alt: "test alt"
     },
     desc: "A Whack-a-Mole game made in React on CodeSandbox",
@@ -227,7 +184,7 @@ export const games = [
   {
     title: "Crocodile Dentist",
     img: {
-      src: crocodileDentist,
+      src: "/images/crocodileDentist.avif",
       alt: "CSS crocodile missing teeth"
     },
     desc: "vanillaJS Crocodile Dentist",
@@ -261,7 +218,7 @@ export const games = [
   {
     title: "Jeopadry!",
     img: {
-      src: jeopardy,
+      src: "/images/jeopardy-demo.gif",
       alt: "Jeopardy gameplay"
     },
     desc: "Frontend Project made at Rithm School using jQuery and the API jService",
