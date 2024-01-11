@@ -1,4 +1,3 @@
-// import {useState} from 'react'
 import Image from 'next/image'
 import styles from './page.module.css'
 import '@/app/pages/home/Home.css';
@@ -15,7 +14,11 @@ export default function Main() {
   // const closeMobNav = () => {}
 
 
-  return (<>
+  return (
+    <>
+      {/* CDN for FontAwesome icons in the Footer
+        // TODO: add this to Footer component only?
+      */}
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'></link>
 
     <main className={styles.main}>
@@ -27,7 +30,8 @@ export default function Main() {
           <div id="Home">
       <header>
         <div className="home container">
-            <Image src="https://images.unsplash.com/photo-1458819714733-e5ab3d536722?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="coffee cup by Annie Spratt"  width={1200} height={600} />
+            {/* <Image src="https://images.unsplash.com/photo-1458819714733-e5ab3d536722?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="coffee cup by Annie Spratt"  width={1200} height={600} /> */}
+            <Image src="/images/coffeeCup.avif" alt="coffee cup by Annie Spratt"  width={1200} height={600} />
           <div className="headline">
             <h1>Hi, my name is Jay Vigilla.<br /><code>#IBuildThingsWithComputers</code></h1>
           </div>

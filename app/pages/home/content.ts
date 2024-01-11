@@ -1,6 +1,3 @@
-// import notebook from './../../images/notebook.avif'
-// import messager from './../../images/social-phone.avif'
-// import jayDesk from './../../images/jay-desk2.avif'
 import { LinkData, ImageData } from '@/app/types';
 
 interface Tease {
@@ -14,7 +11,6 @@ interface Tease {
 
 const blogTease: Tease = {
   img: {
-    // src: jayDesk,
     src: "/images/jay-desk2.avif",
     alt: 'Jay at computer desk',
     picWidth: '45%',
@@ -31,7 +27,6 @@ const blogTease: Tease = {
 
 const projTease: Tease = {
   img: {
-    // src: notebook,
     src: "/images/notebook.avif",
     alt: 'project notebook',
     picWidth: '45%',
@@ -49,7 +44,6 @@ const projTease: Tease = {
 
 const contactTease: Tease = {
   img: {
-    // src: messager,
     src: "/images/social-phone.avif",
     alt: 'smart phone ready to send a message',
     picWidth: '25%',
