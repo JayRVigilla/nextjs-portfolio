@@ -9,13 +9,10 @@ export default function Main() {
   return (
     <>
     <main className={styles.main}>
-      {/* <div className="App"> */}
-      {/* <div id="not-nav" > */}
-{/* // TODO: put routes in here */}
       <div id="Home">
       <header>
         <div className="home container">
-            <Image src="/images/coffee_cup.avif" alt="coffee cup by Annie Spratt"  width={1200} height={600} />
+            <Image src="/coffee_cup.avif" alt="coffee cup by Annie Spratt"  width={1200} height={600} />
           <div className="headline">
             <h1>Hi, my name is Jay Vigilla.<br /><code>#IBuildThingsWithComputers</code></h1>
           </div>

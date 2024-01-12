@@ -19,7 +19,7 @@ export const projects = [
     title: "NamePicker",
 
     img: {
-      src: "/images/namepicker.gif",
+      src: "/namepicker.gif",
       alt: "NamePicker demo gif"
     },
     desc: "I'm a proud parent that wants to make sure my own Hermione Granger doesn't feel stifled by teachers not calling on her when her hand is up first and has been up first for every question... all... month... long. Desktop Electron app using ReactJS.",
@@ -34,7 +34,7 @@ export const projects = [
   {
     title: "Warbler",
     img: {
-      src: "/images/warbler-logo.avif",
+      src: "/warbler-logo.avif",
       alt: "warbler cartoon"
     },
     desc: "An X(formerly Twitter)-clone written in Python utilizing Jinja server-side rendering. Full Stack project made at Rithm School.",
@@ -56,7 +56,7 @@ export const projects = [
   {
     title: "MovieSearch",
     img: {
-      src: "/images/movie-search-demo.gif",
+      src: "/movie-search-demo.gif",
       alt: "movie search gif"
     },
     desc: "A Node.js project making HTTP requests to an  IMDB API for movie data. A toy project for testing RapidAPIs",
@@ -72,7 +72,7 @@ export const projects = [
   {
     title: "ZhangGa",
     img: {
-      src: "/images/ZhangGa-demo.gif",
+      src: "/ZhangGa-demo.gif",
       alt: "Tell your story"
     },
     desc: "Full Stack Project. A blogging app with a React frontend and Node-Express server. Project at Rithm School introducing Redux",
@@ -95,7 +95,7 @@ export const experiments = [
   {
     title: "Semantic HTML Buttons",
     img: {
-      src: "/images/semanticButtons.avif",
+      src: "/semanticButtons.avif",
       alt: "CodeSandbox screen shot"
     },
     desc: "A study in semantic HTML for a blog post",
@@ -114,7 +114,7 @@ export const experiments = [
   {
     title: "DateTimePicker",
     img: {
-      src: "/images/day_time_slot_picker.avif",
+      src: "/day_time_slot_picker.avif",
       alt: "CodeSandbox screenshot"
     },
     desc: "Rough draft of a time picker before integrating API calls for a work project.",
@@ -156,7 +156,7 @@ export const games = [
   {
     title: "Whack-a-Mole",
     img: {
-      src: "/images/whackAMole.avif",
+      src: "/whackAMole.avif",
       alt: "test alt"
     },
     desc: "A Whack-a-Mole game made in React on CodeSandbox",
@@ -175,7 +175,7 @@ export const games = [
   {
     title: "Crocodile Dentist",
     img: {
-      src: "/images/crocodile_dentist.avif",
+      src: "/crocodile_dentist.avif",
       alt: "CSS crocodile missing teeth"
     },
     desc: "vanillaJS Crocodile Dentist",
@@ -209,7 +209,7 @@ export const games = [
   {
     title: "Jeopadry!",
     img: {
-      src: "/images/jeopardy-demo.gif",
+      src: "/jeopardy-demo.gif",
       alt: "Jeopardy gameplay"
     },
     desc: "Frontend Project made at Rithm School using jQuery and the API jService",

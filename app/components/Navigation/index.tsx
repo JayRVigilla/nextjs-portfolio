@@ -25,7 +25,7 @@ function Navigation({ navIn }: iProps) {
     <nav id="Navigation" className={`${xtra}`}>
       <header className="nav header">
         <div className="nav logo">
-          <Image src="/images/jrv-logo.avif" alt="jayVigilla()" width={120} height={120} />
+          <Image src="/jrv-logo.avif" alt="jayVigilla()" width={120} height={120} />
         </div>
 
         <div className='nav links'>
