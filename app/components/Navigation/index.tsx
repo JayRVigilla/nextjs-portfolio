@@ -4,6 +4,7 @@ import './Navigation.css';
 import {pages} from './content'
 import Image from 'next/image';
 import Link from 'next/link';
+import logo from '@/public/jrv-logo.jpeg'
 
 /**
  * Navigation Bar:
@@ -25,7 +26,7 @@ function Navigation({ navIn }: iProps) {
     <nav id="Navigation" className={`${xtra}`}>
       <header className="nav header">
         <div className="nav logo">
-          <Image src="/jrv-logo.avif" alt="jayVigilla()" width={120} height={120} />
+          <Image src={logo} alt="jayVigilla()" />
         </div>
 
         <div className='nav links'>

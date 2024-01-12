@@ -1,5 +1,7 @@
 import { ImageData, LinkData } from "./types"
-// import jayDesk from "@/public/static/jay_desk.avif"
+import socialPhone from "@/public/social-phone.jpg"
+import notebook from "@/public/notebook.jpeg"
+import jayDesk from "@/public/jay_desk.jpeg"
 
 interface Teaser {
   img: ImageData;
@@ -12,7 +14,7 @@ interface Teaser {
 
 const blogTease: Teaser = {
   img: {
-    src: "/jay_desk.avif",
+    src: jayDesk,
     alt: 'Jay at computer desk',
     picWidth: '45%',
     fit: "cover",
@@ -28,7 +30,7 @@ const blogTease: Teaser = {
 
 const projTease: Teaser = {
   img: {
-    src: "/notebook.avif",
+    src: notebook,
     alt: 'project notebook',
     picWidth: '45%',
     fit: "contain",
@@ -45,7 +47,8 @@ const projTease: Teaser = {
 
 const contactTease: Teaser = {
   img: {
-    src: "/social-phone.avif",
+    src: socialPhone,
+    // src: "/social-phone.jpeg",
     alt: 'smart phone ready to send a message',
     picWidth: '25%',
     fit: "cover",

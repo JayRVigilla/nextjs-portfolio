@@ -34,7 +34,7 @@ export const projects = [
   {
     title: "Warbler",
     img: {
-      src: "/warbler-logo.avif",
+      src: "/warbler-logo.jpeg",
       alt: "warbler cartoon"
     },
     desc: "An X(formerly Twitter)-clone written in Python utilizing Jinja server-side rendering. Full Stack project made at Rithm School.",
@@ -95,7 +95,7 @@ export const experiments = [
   {
     title: "Semantic HTML Buttons",
     img: {
-      src: "/semanticButtons.avif",
+      src: "/semanticButtons.jpeg",
       alt: "CodeSandbox screen shot"
     },
     desc: "A study in semantic HTML for a blog post",
@@ -114,7 +114,7 @@ export const experiments = [
   {
     title: "DateTimePicker",
     img: {
-      src: "/day_time_slot_picker.avif",
+      src: "/day_time_slot_picker.jpeg",
       alt: "CodeSandbox screenshot"
     },
     desc: "Rough draft of a time picker before integrating API calls for a work project.",
@@ -156,7 +156,7 @@ export const games = [
   {
     title: "Whack-a-Mole",
     img: {
-      src: "/whackAMole.avif",
+      src: "/whackAMole.jpeg",
       alt: "test alt"
     },
     desc: "A Whack-a-Mole game made in React on CodeSandbox",
@@ -175,7 +175,7 @@ export const games = [
   {
     title: "Crocodile Dentist",
     img: {
-      src: "/crocodile_dentist.avif",
+      src: "/crocodile_dentist.jpeg",
       alt: "CSS crocodile missing teeth"
     },
     desc: "vanillaJS Crocodile Dentist",

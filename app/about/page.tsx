@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 // import MetaTags from 'react-meta-tags';
-import jayPic from './../../jay-green-wall.avif';
+import jayPic from './../../jay-green-wall.jpeg';
 import PicText from '@/app/components/PicText';
 import './About.css';
 import { aboutObj } from './content'

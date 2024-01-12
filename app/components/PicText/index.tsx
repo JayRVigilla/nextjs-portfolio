@@ -38,7 +38,7 @@ export default function PicText({ img, title, text, right, link, box = false }:i
 
   return (
     <div className={`pic-text ${right ? 'pic-right' : null} ${box ? 'box' : null}`} >
-      <Image src={img?.src} alt={img?.alt} style={styleObj} loading='lazy' width={800} height={400}/>
+      <Image src={img?.src} alt={img?.alt} style={styleObj} loading='lazy' />
       <div className="desc">
         {title && <h2>{title}</h2>}
         {text ? makePs(text) : <p>Loading...</p>}

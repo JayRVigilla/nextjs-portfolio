@@ -16,7 +16,8 @@
 
 .pic-text img{
   margin: 0;
-  /* height: 100%; */
+  width: 40vw;
+  height: auto;
 }
 
 .pic-text a{

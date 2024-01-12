@@ -1,9 +1,10 @@
 import { ImageData } from "@/app/types"
+import jayPic from "@/public/jay-green-wall.jpeg"
 
 export const aboutObj: {img: ImageData, text: string[], right: boolean} = {
   img: {
-    // src: jayPic,
-    src: "/jay-green-wall.avif",
+    src: jayPic,
+    // src: "/jay-green-wall.av.jpeg",
     alt: 'jay vigilla',
     picWidth: '40%',
     fit: "fill"

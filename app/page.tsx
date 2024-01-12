@@ -3,6 +3,7 @@ import styles from './page.module.css'
 import PicText from '@/app/components/PicText';
 import { teasers } from '@/app/content';
 import "./Home.css"
+import coffeeCup from "@/public/coffee_cup.jpeg"
 
 export default function Main() {
 
@@ -12,7 +13,7 @@ export default function Main() {
       <div id="Home">
       <header>
         <div className="home container">
-            <Image src="/coffee_cup.avif" alt="coffee cup by Annie Spratt"  width={1200} height={600} />
+            <Image src={coffeeCup} alt="coffee cup by Annie Spratt" />
           <div className="headline">
             <h1>Hi, my name is Jay Vigilla.<br /><code>#IBuildThingsWithComputers</code></h1>
           </div>
