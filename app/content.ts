@@ -11,7 +11,7 @@ interface Teaser {
 
 const blogTease: Teaser = {
   img: {
-    src: "/images/jay-desk2.avif",
+    src: "/images/jay_desk.avif",
     alt: 'Jay at computer desk',
     picWidth: '45%',
     fit: "cover",

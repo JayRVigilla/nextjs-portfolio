@@ -15,7 +15,7 @@ export default function Main() {
       <div id="Home">
       <header>
         <div className="home container">
-            <Image src="/images/coffeeCup.avif" alt="coffee cup by Annie Spratt"  width={1200} height={600} />
+            <Image src="/images/coffee_cup.avif" alt="coffee cup by Annie Spratt"  width={1200} height={600} />
           <div className="headline">
             <h1>Hi, my name is Jay Vigilla.<br /><code>#IBuildThingsWithComputers</code></h1>
           </div>

@@ -1,12 +1,3 @@
-// import zhanga from "./../../images/ZhangGa-demo.gif";
-// import movieSearch from "./../../images/movie-search-demo.gif";
-// import warbler from "./../../images/warbler-logo.avif";
-// import jeopardy from "./../../images/jeopardy-demo.gif";
-// import NamePicker from "./../../images/namepicker.gif";
-// import whackAMole from "./../../images/whackAMole.avif";
-// import crocodileDentist from "./../../images/crocodileDentist.avif";
-// import semanticButtons from "./../../images/semanticButtons.avif";
-// import dayTimeSlotPicker from "./../../images/dayTimeSlotPicker.avif";
 import { ImageData } from "../types";
 
 export interface Project{
@@ -123,7 +114,7 @@ export const experiments = [
   {
     title: "DateTimePicker",
     img: {
-      src: "/images/dayTimeSlotPicker.avif",
+      src: "/images/day_time_slot_picker.avif",
       alt: "CodeSandbox screenshot"
     },
     desc: "Rough draft of a time picker before integrating API calls for a work project.",
@@ -184,7 +175,7 @@ export const games = [
   {
     title: "Crocodile Dentist",
     img: {
-      src: "/images/crocodileDentist.avif",
+      src: "/images/crocodile_dentist.avif",
       alt: "CSS crocodile missing teeth"
     },
     desc: "vanillaJS Crocodile Dentist",
