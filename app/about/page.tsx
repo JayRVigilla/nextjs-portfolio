@@ -24,9 +24,9 @@ const About = () => {
       <h1>About</h1>
             <PicText
             img={img}
-        text={text}
-        right={right}
-        title=''
+            text={text}
+            right={right}
+            title=''
           />
 
       {/* {typeof content == 'string' && calledApi

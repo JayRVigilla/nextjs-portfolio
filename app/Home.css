@@ -13,6 +13,9 @@
   padding: 0 1rem;
 
 }
+header{
+  width: 100%;
+}
 
 #Home .headline {
   background-color: none;

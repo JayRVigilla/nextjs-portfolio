@@ -13,7 +13,7 @@ export default function Main() {
       <div id="Home">
       <header>
         <div className="home container">
-            <Image src={coffeeCup} alt="coffee cup by Annie Spratt" />
+            <Image src={coffeeCup} alt="coffee cup by Annie Spratt" priority/>
           <div className="headline">
             <h1>Hi, my name is Jay Vigilla.<br /><code>#IBuildThingsWithComputers</code></h1>
           </div>

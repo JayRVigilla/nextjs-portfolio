@@ -29,7 +29,7 @@ export default function PicText({ img, title, text, right, link, box = false }:i
     })
 
   const styleObj = {
-    picWidth: img.picWidth || 'auto',
+    // picWidth: img.picWidth || 'auto',
     objectFit: img.fit,
     position: (isImgSticky ? "sticky" : "relative") as "sticky" | "relative",
     top: isImgSticky ? "15vh" : undefined
@@ -38,7 +38,9 @@ export default function PicText({ img, title, text, right, link, box = false }:i
 
   return (
     <div className={`pic-text ${right ? 'pic-right' : null} ${box ? 'box' : null}`} >
-      <Image src={img?.src} alt={img?.alt} style={styleObj} loading='lazy' />
+      <div className='img-container'>
+      <Image src={img?.src} alt={img?.alt} style={styleObj} priority/>
+      </div>
       <div className="desc">
         {title && <h2>{title}</h2>}
         {text ? makePs(text) : <p>Loading...</p>}
