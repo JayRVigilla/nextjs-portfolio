@@ -4,7 +4,7 @@ import PicText from '@/app/components/PicText';
 import { teasers } from '@/app/content';
 import "./Home.css"
 import coffeeCup from "@/public/coffee_cup.jpeg"
-
+import { Metadata } from 'next';
 export default function Main() {
 
   return (
