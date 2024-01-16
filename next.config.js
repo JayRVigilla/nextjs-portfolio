@@ -2,7 +2,7 @@
 const nextConfig = {
   output: "export",
   images: {
-    // unoptimized: true,
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       // {
