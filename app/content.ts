@@ -57,7 +57,7 @@ const contactTease: Teaser = {
   text: ["If you'd like to reach me about projects, both fun and professional, I'd be happy to hear from you. I also love to talk about tech, food, pop culture, and rescue dogs!"],
   right: true,
   link: {
-    href: "/contact",
+    href: 'mailto: jayrvigilla@gmail.com',
     text: "Hit me up"
   }
 }

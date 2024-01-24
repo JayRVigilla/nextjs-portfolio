@@ -10,13 +10,10 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  padding: 0 1rem;
-
 }
-header{
+section {
   width: 100%;
 }
-
 #Home .headline {
   background-color: none;
   border-radius: 8px;
@@ -26,10 +23,10 @@ header{
   text-align: left;
   padding: 1rem;
   z-index: 1;
-  -webkit-animation: slide 2s forwards;
-  -webkit-animation-delay: 1s;
-  animation: slide 2s forwards;
-  animation-delay: 1s;
+  -webkit-animation: slide var(--slide-time) forwards;
+  -webkit-animation-delay: var(slide-delay-time);
+  animation: slide var(--slide-time) forwards;
+  animation-delay: var(slide-delay-time);
 }
 
 @-webkit-keyframes slide {
@@ -43,17 +40,19 @@ header{
 
 .home.container {
   position: relative;
-  &>img{
-  z-index: -2;
   width: 100%;
-  height: 100%;
-  /* min-width: 400px; */
-  object-fit: fit;
-  animation: fadeIn ease 5s;
-  -webkit-animation: fadeIn ease 5s;
-  -moz-animation: fadeIn ease 5s;
-  -o-animation: fadeIn ease 5s;
-  -ms-animation: fadeIn ease 5s;
+
+  &>img{
+    z-index: -2;
+    max-height: 80%;
+    width: 100%;
+  object-fit: cover;
+  animation: fadeIn ease var(--fade-time);
+  -webkit-animation: fadeIn ease var(--fade-time);
+  -moz-animation: fadeIn ease var(--fade-time);
+  -o-animation: fadeIn ease var(--fade-time);
+  -ms-animation: fadeIn ease var(--fade-time);
+
   }
 }
 
@@ -62,12 +61,17 @@ header{
 }
 
 .teaser.about{
-  width: 75%;
-  height: auto;
-  height: 50%;
   background-color: white;
   border: 2px solid var(--br-teal);
   padding: .5rem;
+
+    &>.content{
+      padding: 1rem;
+      &>a.button{
+        margin: 2rem;
+        line-height: 2rem;
+      }
+    }
 }
 
 .teaser.about *{
@@ -76,14 +80,6 @@ header{
 
 .teaser.projects{
   margin: 1rem;
-}
-
-/* .teaser.connect{
-  margin: 0 2rem;
-} */
-
-.teaser.connect .pictext > img{
-  background-position: -20px 0;
 }
 
 @keyframes fadeIn {

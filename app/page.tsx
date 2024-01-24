@@ -11,15 +11,12 @@ export default function Main() {
     <>
     <main className={styles.main}>
       <div id="Home">
-      <header>
-            <div className="home container">
-              
-            <Image src={coffeeCup} alt="coffee cup by Annie Spratt" priority/>
+        <div className="home container">
+          <Image src={coffeeCup} alt="coffee cup by Annie Spratt" priority/>
           <div className="headline">
             <h1>Hi, my name is Jay Vigilla.<br /><code>#IBuildThingsWithComputers</code></h1>
           </div>
-        </div>
-      </header>
+      </div>
 
       <section className="teaser about">
         <h2>{`Who's this?`}</h2>
