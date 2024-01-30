@@ -15,7 +15,7 @@ section {
   width: 100%;
 }
 #Home .headline {
-  background-color: none;
+  /* background-color: none; */
   border-radius: 8px;
   position: absolute;
   bottom: 30%;
@@ -61,15 +61,15 @@ section {
 }
 
 .teaser.about{
-  background-color: white;
+  /* background-color: white; */
   border: 2px solid var(--br-teal);
   padding: .5rem;
 
     &>.content{
       padding: 1rem;
-      &>a.button{
-        margin: 2rem;
-        line-height: 2rem;
+      display: flex;
+      &>.text{
+        text-align: left;
       }
     }
 }

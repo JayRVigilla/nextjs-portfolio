@@ -4,8 +4,20 @@ import PicText from '@/app/components/PicText';
 import { teasers } from '@/app/content';
 import "./Home.css"
 import coffeeCup from "@/public/coffee_cup.jpeg"
+import jayDesk from "@/public/jay_desk.jpeg"
 import { Metadata } from 'next';
+import { BeamIn } from './components/BeamIn';
 export default function Main() {
+
+  const About = () => {
+    return (
+      <>
+    <h2>{`Who's this?`}</h2>
+          <p>{`I'm a Software Engineer experienced in Front End development using React (both Classes and Hooks) to make performant UI/UX.`}</p>
+          <p>{`Living in the San Francisco Bay Area I'm a coffee fiend, doggy daddy, human dad, former restaurant cook, recovering comic book collector, maker of longer-than-necessary lists, and lover of puns.`}</p>
+      </>
+  )
+}
 
   return (
     <>
@@ -19,13 +31,17 @@ export default function Main() {
       </div>
 
       <section className="teaser about">
-        <h2>{`Who's this?`}</h2>
-        <div className="content">
-          <p>{`Today I'm a Software Engineer... and a coffee fiend, doggy daddy, human dad, former restaurant cook, recovering comic book collector, maker of longer-than-necessary lists, and lover of puns.`}</p>
-          <p>{`I got my Bachelor's in Psychology and started cooking in restaurants because I loved the closeness of my kitchen families and the adrenaline rush of restaurant service!`}</p>
-          <a className="button" href="/about">Ready to know more?</a>
-        </div>
-      </section>
+        {/* <h2>{`Who's this?`}</h2>
+            <div className="content">
+              <div className='text'>
+
+          <p>{`I'm a Software Engineer experienced in Front End development using React (both Classes and Hooks) to make performant UI/UX.`}</p>
+          <p>{`Living in the San Francisco Bay Area I'm a coffee fiend, doggy daddy, human dad, former restaurant cook, recovering comic book collector, maker of longer-than-necessary lists, and lover of puns.`}</p>
+            </div>
+            <Image src={jayDesk} alt={"Jay at computer desk"} />
+            </div> */}
+            <BeamIn><About /></BeamIn>
+          </section>
 
       {teasers.map((teaser, index) => {
         return (

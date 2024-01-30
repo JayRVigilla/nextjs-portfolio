@@ -36,7 +36,7 @@ const projTease: Teaser = {
     fit: "contain",
   },
   title: 'Projects',
-  text: ["Want to see what I can do?. Full stack projects and some classic boardgames in vanillaJS."],
+  text: ["Want to see what I can do? Full stack projects and some classic boardgames in vanillaJS."],
   right: undefined,
   link: {
     href: "/projects",
@@ -62,4 +62,6 @@ const contactTease: Teaser = {
   }
 }
 
-export const teasers = [blogTease, projTease, contactTease]
+export const teasers = [ projTease ]
+// export const teasers = [ projTease, contactTease]
+// export const teasers = [blogTease, projTease, contactTease]

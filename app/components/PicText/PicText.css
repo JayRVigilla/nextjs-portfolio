@@ -10,7 +10,7 @@
 }
 
 .box {
-    background-color: white;
+    /* background-color: white; */
     border: solid 2px var(--br-orange);
     border-radius: 8px;
   }
