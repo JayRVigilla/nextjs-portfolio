@@ -2,7 +2,6 @@
 /** BeamIn documentation
  */
 import React, { ReactNode, useState } from "react";
-// import { useBeamIn } from "./useBeamIn";
 import "./BeamIn.css";
 
 export interface BeamInProps {
@@ -13,7 +12,6 @@ export const BeamIn = ({children}: BeamInProps) => {
 const [isVisible, setIsVisible] = useState(false);
 
   const toggle = () => setIsVisible(!isVisible);
-  // const { toggle, isVisible } = useBeamIn({initialValue: false})
 
   return (
     <div className="beam-container">

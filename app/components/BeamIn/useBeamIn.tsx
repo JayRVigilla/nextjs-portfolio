@@ -11,7 +11,6 @@ interface ReturnTypes {
 export const useBeamIn = ({initialValue}: iProps) : ReturnTypes => {
   const [isVisible, setIsVisible] = useState(false)
 
-  // const toggleIsVisible = () => setIsVisible(!isVisible)
   const toggle = useCallback(() => setIsVisible(prevState => !prevState), [])
 
   return {isVisible, toggle}

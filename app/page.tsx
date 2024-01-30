@@ -31,15 +31,6 @@ export default function Main() {
       </div>
 
       <section className="teaser about">
-        {/* <h2>{`Who's this?`}</h2>
-            <div className="content">
-              <div className='text'>
-
-          <p>{`I'm a Software Engineer experienced in Front End development using React (both Classes and Hooks) to make performant UI/UX.`}</p>
-          <p>{`Living in the San Francisco Bay Area I'm a coffee fiend, doggy daddy, human dad, former restaurant cook, recovering comic book collector, maker of longer-than-necessary lists, and lover of puns.`}</p>
-            </div>
-            <Image src={jayDesk} alt={"Jay at computer desk"} />
-            </div> */}
             <BeamIn><About /></BeamIn>
           </section>
 
@@ -58,8 +49,6 @@ export default function Main() {
         )
       })}
           </div>
-          {/* </div> */}
-      {/* </div> */}
 
     </main>
     </>
