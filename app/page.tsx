@@ -30,7 +30,8 @@ export default function Main() {
           </div>
       </div>
 
-      <section className="teaser about">
+          <section className="teaser about">
+            {/* // TODO: About becomes static, Experience section is Beamed in */}
             <BeamIn><About /></BeamIn>
           </section>
 

@@ -1,5 +1,4 @@
 :root{
-    /* constants for BeamIn */
   --beam-time: .3s;
   --beam-gradient: radial-gradient(
     circle,

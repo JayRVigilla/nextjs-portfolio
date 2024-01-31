@@ -19,11 +19,7 @@ export const metadata: Metadata = {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Navigation navIn={false} /> */}
-        <div id="not-nav" >
-
         {children}
-        </div>
         <Footer/>
       </body>
     </html>

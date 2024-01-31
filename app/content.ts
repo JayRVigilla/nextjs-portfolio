@@ -62,6 +62,35 @@ const contactTease: Teaser = {
   }
 }
 
+const experienceTease = [
+  {img: {
+    src: "AvailLogo",
+    alt: 'avail logo',
+    picWidth: '25%',
+    fit: "cover",
+  },
+  title: 'Avail Medsystems',
+  text: ["If you'd like to reach me about projects, both fun and professional, I'd be happy to hear from you. I also love to talk about tech, food, pop culture, and rescue dogs!"],
+  right: true,
+  link: {
+    href: 'mailto: jayrvigilla@gmail.com', // avail website
+    text: "Hit me up"
+  }},
+  {img: {
+    src: "SevenLogo",
+    alt: 'seven logo',
+    picWidth: '25%',
+    fit: "cover",
+  },
+  title: 'Seven.me, Inc.',
+  text: ["If you'd like to reach me about projects, both fun and professional, I'd be happy to hear from you. I also love to talk about tech, food, pop culture, and rescue dogs!"],
+  right: true,
+  link: {
+    href: 'mailto: jayrvigilla@gmail.com', // seven website
+    text: "Hit me up"
+  }}
+]
+
 export const teasers = [ projTease ]
 // export const teasers = [ projTease, contactTease]
 // export const teasers = [blogTease, projTease, contactTease]
