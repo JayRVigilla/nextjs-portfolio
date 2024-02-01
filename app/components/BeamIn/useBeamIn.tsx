@@ -1,17 +1,25 @@
-"use client"
-import { useState, useCallback } from "react"
+import { useState, useCallback, useEffect} from "react"
 
-interface iProps {initialValue: boolean}
+interface BeamInProps{
+  initialValue: boolean;
+  countdown?: number; // seconds
+};
 
 interface ReturnTypes {
   isVisible: boolean;
   toggle: () => void;
 }
 
-export const useBeamIn = ({initialValue}: iProps) : ReturnTypes => {
-  const [isVisible, setIsVisible] = useState(false)
-
+export const useBeamIn = ({initialValue, countdown = 0}: BeamInProps) : ReturnTypes => {
+  const [isVisible, setIsVisible] = useState(initialValue)
   const toggle = useCallback(() => setIsVisible(prevState => !prevState), [])
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(!initialValue)
+    }, countdown * 1000 ?? 0)
+  }, [toggle, countdown, initialValue])
+
 
   return {isVisible, toggle}
 }

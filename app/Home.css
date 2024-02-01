@@ -22,14 +22,14 @@ section {
   border-radius: 8px;
   position: absolute;
   bottom: 30%;
-  left: -100%;
+  /* left: -100%; */
   text-align: left;
   padding: 1rem;
   z-index: 1;
-  -webkit-animation: slide var(--slide-time) forwards;
+  /* -webkit-animation: slide var(--slide-time) forwards;
   -webkit-animation-delay: var(slide-delay-time);
   animation: slide var(--slide-time) forwards;
-  animation-delay: var(slide-delay-time);
+  animation-delay: var(slide-delay-time); */
 }
 
 @-webkit-keyframes slide {

@@ -18,6 +18,33 @@ export default function Main() {
       </>
   )
 }
+  const headlines = ["DadJokeAficionado", "IBuildThingsWithComputers", "EngineerInSanFranciscoBayArea", "CodingIsFun", "ReactDeveloper", "FullStackDeveloper"]
+  
+function shuffle(array: Array<any>) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex > 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
+  const headlineGenerator = (headlineArray : Array<string>) => {
+    const shuffledHeadlines = shuffle(headlineArray)
+    console.log(shuffledHeadlines)
+    const rnd = Math.floor(Math.random() * shuffledHeadlines.length)
+    console.log("headlineGenerator", rnd)
+    return shuffledHeadlines[rnd]
+  }
 
   return (
     <>
@@ -26,13 +53,21 @@ export default function Main() {
         <div className="home container">
           <Image src={coffeeCup} alt="coffee cup by Annie Spratt" priority/>
           <div className="headline">
-            <h1>Hi, my name is Jay Vigilla.<br /><code>#IBuildThingsWithComputers</code></h1>
+            <BeamIn>
+                <h1>Jay Vigilla
+                  <br />
+                  <em>Software Engineer</em>
+                  <br />
+                  {/* <code>#IBuildThingsWithComputers</code> */}
+                  <code>#{headlineGenerator(headlines)}</code>
+                </h1>
+            </BeamIn>
           </div>
       </div>
 
           <section className="teaser about">
             {/* // TODO: About becomes static, Experience section is Beamed in */}
-            <BeamIn><About /></BeamIn>
+              <About />
           </section>
 
       {teasers.map((teaser, index) => {
