@@ -67,11 +67,14 @@
   }
 
   100% {
+    border: none;
     background: none;
     height: auto;
     margin: 2rem;
-    width: auto;
+    /* width: auto; */
+    width: 90%;
     left: 0;
     background-color: black;
+    padding: 8px;
   }
 }

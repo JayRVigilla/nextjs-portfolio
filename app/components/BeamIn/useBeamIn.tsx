@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect} from "react"
+import { useState, useCallback, useEffect } from "react"
 
 interface BeamInProps{
   initialValue: boolean;
@@ -9,6 +9,8 @@ interface ReturnTypes {
   isVisible: boolean;
   toggle: () => void;
 }
+
+// Using a custom hook to manage state.
 
 export const useBeamIn = ({initialValue, countdown = 0}: BeamInProps) : ReturnTypes => {
   const [isVisible, setIsVisible] = useState(initialValue)

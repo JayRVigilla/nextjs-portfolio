@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "demo": "npm run build && cp build/index.html build/200.html && surge build https://jay-portfolio-demo.surge.sh",
     "deploy": "npm run build && cp build/index.html build/200.html && surge build http://jayvigilla.com"
   },
   "dependencies": {
