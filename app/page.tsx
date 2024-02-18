@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import PicText from '@/app/components/PicText';
+// import PicText from '@/app/components/PicText';
 import { teasers } from '@/app/content';
 import "./Home.css"
 import coffeeCup from "@/public/coffee_cup.jpeg"

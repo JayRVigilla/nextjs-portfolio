@@ -62,33 +62,23 @@ const contactTease: Teaser = {
   }
 }
 
-const experienceTease = [
-  {img: {
-    src: "AvailLogo",
-    alt: 'avail logo',
-    picWidth: '25%',
-    fit: "cover",
+const experienceContent = [
+{
+  businessName: "Avail Medsystems",
+  start: "04/2022",
+  end: "11/2023",
+  description: "Providing simple cost-effective solutions that connect procedural healthcare professionals regardless of location.",
+  tags: ["JavaScript", "TypeScript", "React", "CSS", "Redux", "Storybook", "Electron", "Splunk"],
+  press: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html"
   },
-  title: 'Avail Medsystems',
-  text: ["If you'd like to reach me about projects, both fun and professional, I'd be happy to hear from you. I also love to talk about tech, food, pop culture, and rescue dogs!"],
-  right: true,
-  link: {
-    href: 'mailto: jayrvigilla@gmail.com', // avail website
-    text: "Hit me up"
-  }},
-  {img: {
-    src: "SevenLogo",
-    alt: 'seven logo',
-    picWidth: '25%',
-    fit: "cover",
-  },
-  title: 'Seven.me, Inc.',
-  text: ["If you'd like to reach me about projects, both fun and professional, I'd be happy to hear from you. I also love to talk about tech, food, pop culture, and rescue dogs!"],
-  right: true,
-  link: {
-    href: 'mailto: jayrvigilla@gmail.com', // seven website
-    text: "Hit me up"
-  }}
+  {
+  businessName: "Seven.me, Inc",
+  start: "04/2021",
+  end: "04/2022",
+  description: "Using behavioral coaching and technology to help people lead healthier and happier lives. Lifestyle coaching made available via mobile app.",
+  tags: ["JavaScript", "TypeScript", "React", "CSS", "React Redux", "React Native"],
+  press:"https://www.linkedin.com/company/seven.me/"
+}
 ]
 
 export const teasers = [ projTease ]
