@@ -1,14 +1,15 @@
 import React from "react";
 import "./style.css";
-import { Badge } from "./../Badge";
+import { Badge } from "../Badge";
 
-// interface Props {
-//   businessName: string;
-//   start: string;
-//   end: string;
-//   description: string;
-//   tags: string[];
-// }
+interface Props {
+  businessName: string;
+  start: string;
+  end: string;
+  description: string;
+  press?: string;
+  tags: string[];
+}
 
 export const JobCard = ({
   businessName,
@@ -16,8 +17,9 @@ export const JobCard = ({
   end,
   description,
   tags,
-// }: Props) => {
-}) => {
+press
+}: Props) => {
+// }) => {
   return (
     <div className="root job-card">
       <h3> {businessName}</h3>
@@ -30,8 +32,9 @@ export const JobCard = ({
       <div className="tags">
         {tags.map((tag) => (
           <Badge title={tag} key={`${tag}-${businessName}`} />
-        ))}
+          ))}
       </div>
+      {press && <a href={press} rel="noreferrer" target="_blank" >Press Link</a>}
     </div>
   );
 };

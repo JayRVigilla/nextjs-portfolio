@@ -62,13 +62,13 @@ const contactTease: Teaser = {
   }
 }
 
-const experienceContent = [
+export const experienceContent = [
 {
   businessName: "Avail Medsystems",
   start: "04/2022",
   end: "11/2023",
   description: "Providing simple cost-effective solutions that connect procedural healthcare professionals regardless of location.",
-  tags: ["JavaScript", "TypeScript", "React", "CSS", "Redux", "Storybook", "Electron", "Splunk"],
+  tags: ["JavaScript", "TypeScript", "React", "CSS (Sass)", "Redux", "Jest", "Storybook", "Electron", "Splunk"],
   press: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html"
   },
   {
@@ -76,8 +76,15 @@ const experienceContent = [
   start: "04/2021",
   end: "04/2022",
   description: "Using behavioral coaching and technology to help people lead healthier and happier lives. Lifestyle coaching made available via mobile app.",
-  tags: ["JavaScript", "TypeScript", "React", "CSS", "React Redux", "React Native"],
+  tags: ["JavaScript", "TypeScript", "React", "CSS", "Redux", "Jest", "React Native", "Expo", "React Query"],
   press:"https://www.linkedin.com/company/seven.me/"
+},
+  {
+  businessName: "Freelance",
+  start: "11/2020",
+  end: "04/2021",
+  description: "SEO and responsive design elements for Shopify and custom static business websites",
+  tags: ["Shopify","JavaScript", "React", "CSS", "Lighthouse"],
 }
 ]
 

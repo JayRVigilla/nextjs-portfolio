@@ -18,15 +18,12 @@
   /* bottom: 30%; */
   /* left: -100%; */
   text-align: left;
-  padding: 2rem;
+  /* padding: 2rem; */
   z-index: 1;
 }
 
 }
 
-/* section {
-  width: 100%;
-} */
 
 
 .home.container {
@@ -51,15 +48,28 @@
   border-radius: 6px;
   padding: .5rem;
   width: 90%;
+  margin: 1rem 0;
 
-  &.about{
+  /* &.about{ */
     /* background-color: white; */
-    border: 2px solid var(--br-teal);
-    margin: 2rem;
+    /* border: 2px solid var(--br-teal); */
 
-    *{
+    /* *{
       margin: 1rem .5rem;
-    }
+    } */
+  /* } */
+
+  &.jobs{
+    background-color: rgba(211, 211, 211, 0.3);
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+    .job-cards{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
   }
 }
 

@@ -1,10 +1,8 @@
-import Image from 'next/image'
 import styles from './page.module.css'
-// import PicText from '@/app/components/PicText';
-import { teasers } from '@/app/content';
 import "./Home.css"
-import coffeeCup from "@/public/coffee_cup.jpeg"
 import { BeamIn } from './components/BeamIn';
+import { experienceContent } from './content'
+import { JobCard } from './components/JobCard';
 export default function Main() {
 
   return (
@@ -16,9 +14,7 @@ export default function Main() {
             <BeamIn>
                 <h1>Jay Vigilla
                   <br />
-                  <em>Software Engineer</em>
-                  <br />
-                  <code>IBuildThingsForPeopleWithComputers()</code>
+                  <code>Software Engineer</code>
                 </h1>
             </BeamIn>
           </div>
@@ -26,14 +22,27 @@ export default function Main() {
 
           <section className="teaser about">
             <h2>{`Who's this?`}</h2>
-            <p>{`Years before I was a Software Engineer, I was a restaurant chef. I enjoyed working shoulder to shoulder with other passionate individuals that just wanted to make our patrons happy.`}</p>
-            <p>{`My name is Jay Vigilla, a Software Engineer experienced in building UI/UX using React. I love talking about user experience and understanding the use case for the apps I'm making. I've been most fulfilled working with organizations utilizing technology to make an impact in society or an Industry. `}</p>
+            <p>{` I became an Engineer to make technology benefitting people and communities. As a kid, i was a tinkerer that liked to take things apart and put them back together. Playing with technology and building things is my favorite part of the job.`}</p>
+
+            <p>{`Fast-moving environments are where I thrive. Before becoming an Engineer, I managed restaurant kitchens in the San Francisco Bay Area and corporate food service at Google's Main Cafeteria. Today, I am passionate about what I create as an Engineer to ensure technology is as welcoming and inviting as your favorite corner restaurant.`}</p>
           </section>
 
           <section className="teaser jobs">
             <h2>Experience</h2>
-            <p>**Component featuring Company logos. click to open modal with quick write up about my work there. Cold even make it look more like a resume. </p>
-            {/* //TODO: create Badge Component, primarily for Tech to highlight in Jobs and Projects */}
+            <div className='job-cards'>
+
+            {experienceContent.map((job) => {
+              return <JobCard
+              businessName={job.businessName}
+              start={job.start}
+              end={job.end}
+              description={job.description}
+              tags={job.tags}
+              press={job.press}
+              key={`job-card-${job.businessName.toLowerCase()}`}
+              />
+            })}
+            </div>
           </section>
 
           <section className="teaser builds">
