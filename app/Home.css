@@ -14,11 +14,7 @@
 
 .headline {
   border-radius: 8px;
-  /* position: absolute; */
-  /* bottom: 30%; */
-  /* left: -100%; */
   text-align: left;
-  /* padding: 2rem; */
   z-index: 1;
 }
 
@@ -40,7 +36,6 @@
   -moz-animation: fadeIn ease var(--fade-time);
   -o-animation: fadeIn ease var(--fade-time);
   -ms-animation: fadeIn ease var(--fade-time);
-
   }
 }
 
@@ -49,38 +44,6 @@
   padding: .5rem;
   width: 90%;
   margin: 1rem 0;
-
-
-  &.jobs{
-    background-color: rgba(211, 211, 211, 0.3);
-    margin-left: 0;
-    margin-right: 0;
-
-    .job-cards{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-
-  &.builds{
-    .project-list{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 2px solid white;
-      padding: 1rem;
-      border-radius: 6px;
-      margin: 1rem;
-
-      .project-cards{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-    }
-  }
 }
 
 @keyframes fadeIn {
@@ -109,9 +72,9 @@
     }
 
     @media screen and (max-width: --mobile-width-max){
-      #Home .headline{
+      /* #Home .headline{
         bottom: 50%;
-      }
+      } */
     }
 
     @media screen and (max-width: --mobile-width-min){

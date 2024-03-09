@@ -72,27 +72,30 @@ export const experienceContent = [
   press: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html"
   },
   {
-  businessName: "Seven.me, Inc",
-  start: "04/2021",
-  end: "04/2022",
-  description: "Using behavioral coaching and technology to help people lead healthier and happier lives. Lifestyle coaching made available via mobile app.",
-  tags: ["JavaScript", "TypeScript", "React", "CSS", "Redux", "Jest", "React Native", "Expo", "React Query"],
-  press:"https://www.linkedin.com/company/seven.me/"
-},
+    businessName: "Seven.me, Inc",
+    start: "04/2021",
+    end: "04/2022",
+    description: "Using behavioral coaching and technology to help people lead healthier and happier lives. Lifestyle coaching made available via mobile app.",
+    tags: ["JavaScript", "TypeScript", "React", "CSS", "Redux", "Jest", "React Native", "Expo", "React Query"],
+    press:"https://www.linkedin.com/company/seven.me/"
+  },
   {
-  businessName: "Freelance",
-  start: "11/2020",
-  end: "04/2021",
-  description: "SEO and responsive design elements for Shopify and custom static business websites",
-  tags: ["Shopify","JavaScript", "React", "CSS", "Lighthouse"],
-}
+    businessName: "Freelance",
+    start: "11/2020",
+    end: "04/2021",
+    description: "SEO and responsive design elements for Shopify and custom static business websites",
+    tags: ["Shopify","JavaScript", "React", "CSS", "Lighthouse"],
+  },
+  {
+    businessName: "Livestack",
+    start: "5/2020",
+    end: "6/2020",
+    description: "Internship with a live event streaming platform for creators and  educators.",
+    tags: ["JavaScript", "React", "Redux", "CSS", "Jest", "Passport.js", "SendGrid"],
+  }
 ]
 
 export const teasers = [ projTease ]
-// export const teasers = [ projTease, contactTease]
-// export const teasers = [blogTease, projTease, contactTease]
-
-import { ImageData } from "../types";
 
 export interface Project{
   title: string;
@@ -253,7 +256,7 @@ export const games = [
       src: "/whackAMole.jpeg",
       alt: "test alt"
     },
-    desc: "A Whack-a-Mole game made in React on CodeSandbox",
+    desc: "A ReactJS Whack-a-Mole game on CodeSandbox. Adjust amount of moles and time intervals for the moles.",
     tech: ["JavaScript", "React"],
     links:
       [
@@ -272,7 +275,7 @@ export const games = [
       src: "/crocodile_dentist.jpeg",
       alt: "CSS crocodile missing teeth"
     },
-    desc: "vanillaJS Crocodile Dentist",
+    desc: "vanillaJS Crocodile Dentist. Pick the wrong tooth and get chomped by the croc! Steve Irwin would approve.",
     tech: ["JavaScript", "HTML", "CSS"],
     links:
       [
@@ -291,7 +294,7 @@ export const games = [
       src: "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/1966_Twister_Cover.jpg/220px-1966_Twister_Cover.jpg",
       alt: "Twister game box"
     },
-    desc: "CodeSandbox",
+    desc: "For that moment when you just got tired of spinning that little arrow, just pull it up on your phone.",
     tech: ["JavaScript", "React", "Typescript"],
     links: [
       {

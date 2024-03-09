@@ -9,10 +9,10 @@
   border-radius: 6px;
   justify-content: space-between;
 
-  &:hover{
+  /* &:hover{
   box-shadow: 2px 2px 10px var(--br-teal);
   border: 2px solid lightgray;
-}
+  } */
 
   & h3{
     margin-top: 0;
