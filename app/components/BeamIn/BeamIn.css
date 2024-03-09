@@ -10,7 +10,10 @@
 
 .beam-container {
     position: relative;
-    height: 300px;
+    /* height: 300px; */
+    height: 250px;
+    display: flex;
+    align-items: center;
 
     .beam {
       width: 5%;

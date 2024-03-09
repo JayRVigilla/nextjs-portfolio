@@ -37,7 +37,7 @@ export const projects = [
       src: "/warbler-logo.jpeg",
       alt: "warbler cartoon"
     },
-    desc: "An X(formerly Twitter)-clone written in Python utilizing Jinja server-side rendering. Full Stack project made at Rithm School.",
+    desc: "A Twitter clone written in Python utilizing Jinja server-side rendering. Full Stack project made at Rithm School.",
     tech: ["Python", "Flask", "Jinja", "SQLAlchemy", "PostgreSQL", "Heroku"],
     links:
       [
