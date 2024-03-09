@@ -5,16 +5,21 @@ import { experienceContent, Project, projects, games, experiments } from './cont
 import { JobCard } from './components/JobCard';
 import Card from '@/app/components/Card';
 
-  const projectCards = (proj: Project[]) => proj.map(p =>
-    <Card
-      key={p.title}
-      title={p.title}
-      img={p.img}
-      desc={p.desc}
-      tech={p.tech}
-      links={p.links}
-    />
-  )
+const projectCards = (proj: Project[]) => {
+  return (
+    <div className='project-cards'>
+    {proj.map(p =>
+      <Card
+        key={p.title}
+        title={p.title}
+        img={p.img}
+        desc={p.desc}
+        tech={p.tech}
+        links={p.links}
+        />)
+  }
+    </div>)
+}
 export default function Main() {
 
 return (
