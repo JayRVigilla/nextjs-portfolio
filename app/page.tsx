@@ -58,15 +58,21 @@ return (
 
         <section className="teaser builds">
           <h2>Projects/Builds</h2>
-          <h3>Full Projects</h3>
-          <div className='project-list'>{projectCards(projects)}</div>
-          <h3>Games</h3>
-          <p>Just a little fun</p>
-          <div className='project-list'>{projectCards(games)}</div>
+          <div className='project-list'>
+            <h3>Full Projects</h3>
+            {projectCards(projects)}
+          </div>
+          <div className='project-list'>
+            <h3>Games</h3>
+            <p>Just a little fun</p>
+            {projectCards(games)}
+          </div>
             <section className="experiments">
+            <div className='project-list'>
               <h3>Experiments</h3>
               <p>Fun and experimentation in CodeSandbox.</p>
-              <div className='project-list'>{projectCards(experiments)}</div>
+              {projectCards(experiments)}
+            </div>
             </section>
         </section>
       </div>
