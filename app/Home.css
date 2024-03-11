@@ -40,10 +40,15 @@
 }
 
 .teaser{
-  border-radius: 6px;
+  /* border-radius: 6px;
   padding: .5rem;
   width: 90%;
-  margin: 1rem 0;
+  margin: 1rem 0; */
+  border-radius: 8px;
+  box-shadow: 0px 8px 24px var(--orange);
+  padding: 16px;
+  background-color: var(--lt-frosted);
+  margin: 36px;
 }
 
 @keyframes fadeIn {
@@ -51,52 +56,52 @@
   100% {opacity:1;}
   }
 
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @media screen and (max-width: --mobile-width-max){
+    /* #Home .headline{
+      bottom: 50%;
+    } */
+  }
+
+  @media screen and (max-width: --mobile-width-min){
+    #Home .headline{
+      bottom: 30%;
+      left: 0;
+      text-align: center;
+      animation: none;
+      -webkit-animation: blur 2s;
+    }
+    #Home h1{
+      font-size: 1.5rem;
+    }
+    @keyframes blur {
+      0% {filter: blur(20px)}
+      50% {filter: blur(15px)}
+      100% {filter: blur(0px)}
     }
 
-    @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    @-webkit-keyframes blur{
+      0% { -webkit-filter: blur(20px);}
+      50% {-webkit-filter: blur(15px)}
+      100% { -webkit-filter: blur(0px);}
     }
-
-    @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-
-    @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-
-    @media screen and (max-width: --mobile-width-max){
-      /* #Home .headline{
-        bottom: 50%;
-      } */
-    }
-
-    @media screen and (max-width: --mobile-width-min){
-      #Home .headline{
-        bottom: 30%;
-        left: 0;
-        text-align: center;
-        animation: none;
-        -webkit-animation: blur 2s;
-      }
-      #Home h1{
-        font-size: 1.5rem;
-      }
-      @keyframes blur {
-        0% {filter: blur(20px)}
-        50% {filter: blur(15px)}
-        100% {filter: blur(0px)}
-      }
-
-      @-webkit-keyframes blur{
-        0% { -webkit-filter: blur(20px);}
-        50% {-webkit-filter: blur(15px)}
-        100% { -webkit-filter: blur(0px);}
-      }
-    }
+  }

@@ -21,22 +21,25 @@ const projectCards = (proj: Project[]) => {
 export const Projects = () => {
   return (
     <section className="teaser builds">
-          <h2>Projects/Builds</h2>
-          <div className='project-list'>
-            <h3>Full Projects</h3>
-            {projectCards(projects)}
-          </div>
-          <div className='project-list'>
-            <h3>Games</h3>
-            <p>Just a little fun</p>
-            {projectCards(games)}
-          </div>
-            <section className="experiments">
-            <div className='project-list'>
-              <h3>Experiments</h3>
-              <p>Fun and experimentation in CodeSandbox.</p>
-              {projectCards(experiments)}
-            </div>
-            </section>
-        </section>)
+      <h2>Projects/Builds</h2>
+      <div id="project-type-selector">
+        <button id="#project-list-projects">projects</button>
+        <button id="#project-list-games">games</button>
+        <button id="#project-list-experiments">experiments</button>
+      </div>
+      <div className='project-list projects' id="project-list-projects">
+        <h3>Full Projects</h3>
+        {projectCards(projects)}
+      </div>
+      <div className='project-list games' id="project-list-games">
+        <h3>Games</h3>
+        <p>Just a little fun</p>
+        {projectCards(games)}
+      </div>
+      <div className='project-list experiments' id="project-list-experiments">
+        <h3>Experiments</h3>
+        <p>Fun and experimentation in CodeSandbox.</p>
+        {projectCards(experiments)}
+      </div>
+    </section>)
 }

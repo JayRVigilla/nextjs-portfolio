@@ -1,18 +1,18 @@
-#Projects > section{
-  border-radius: 8px;
-  box-shadow: 1px 1px 5px var(--orange);
-  padding: 16px;
-  background-color: var(--lt-frosted);
-  margin: 36px;
-}
+.teaser{
 
-/* .projects{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
+  &.builds{
+display: flex;
+flex-direction: column;
 
-.builds{
+    align-items: center;
+    #project-type-selector{
+      width: 33%;
+      display: flex;
+      justify-content: space-between;
+
+
+    }
+
     .project-list{
       display: flex;
       flex-direction: column;
@@ -30,12 +30,13 @@
     }
   }
 
-.project-list{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
+  .project-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
 
-.experiments{
-  background-color: var(--lt-frosted);
+  .experiments{
+    background-color: var(--lt-frosted);
+  }
 }
