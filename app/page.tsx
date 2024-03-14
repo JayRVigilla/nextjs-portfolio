@@ -17,9 +17,7 @@ return (
               <h1>
                 Jay Vigilla
                 <br />
-                <code>Software Engineer</code>
-                <br />
-                <code>Cook to Coder</code>
+                <code>Software Engineer</code> | <code>Cook to Coder</code>
               </h1>
             </BeamIn>
           </div>
