@@ -1,10 +1,14 @@
+// import './About.css'
+
 export const About = () => {
   return (
-           <section className="teaser about">
-          <h2>{`Who's this?`}</h2>
-          <p>{` I became an Engineer to make technology benefitting people and communities. As a kid, i was a tinkerer that liked to take things apart and put them back together. Playing with technology and building things is my favorite part of the job.`}</p>
+    <section className="teaser about">
+      <h2>{`Tech from Hospitality`}</h2>
+      <p>{` Hi! I'm Jay, a former chef in the San Francisco Bay Area that changed careers to Software Engineering. I make technology giving people the same feeling of care and visibility that the Hospitality Industry instilled in me.`}</p>
 
-          <p>{`Fast-moving environments are where I thrive. Before becoming an Engineer, I managed restaurant kitchens in the San Francisco Bay Area and corporate food service at Google's Main Cafeteria. Today, I am passionate about what I create as an Engineer to ensure technology is as welcoming and inviting as your favorite corner restaurant.`}</p>
-        </section>
+      <p>{`As a kid, I was a tinkerer. I took things apart and put them back together, slowing understanding what things did and hiding the extra pieces from my parents. Playing with technology and building things is my favorite part of the job. As with my food career, I like hands-on experience.`}</p>
+
+      <p>{`For more about the Hospitality Industry and Technology overlap (in my head at least) check out my blog:`}<a href="https://babbledotlog.jayvigilla.com/" target="_blank" rel="noreferrer"> babble.log()</a></p>
+    </section>
   )
 }

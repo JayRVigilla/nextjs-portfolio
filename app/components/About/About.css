@@ -1,0 +1,6 @@
+.teaser.about{
+  background-image: url('./../../../public/cuttingboard.jpg');
+  background-size: fill;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}

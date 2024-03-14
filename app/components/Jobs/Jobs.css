@@ -1,7 +1,5 @@
 .jobs{
-    background-color: rgba(211, 211, 211, 0.3);
-    /* margin-left: 0;
-    margin-right: 0; */
+    background-image: url('./../../../public/cuttingboard.jpg');
 
     .job-cards{
       display: flex;
