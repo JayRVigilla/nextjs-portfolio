@@ -1,24 +1,17 @@
+/*
+  Using css logic from https://codepen.io/katiekatsup/pen/gMpOWg
+  to show project type on radio selection
+*/
 .teaser{
 
   &.builds{
-display: flex;
-flex-direction: column;
-
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
-    /* #project-type-selector{
-      width: 33%;
-      display: flex;
-      justify-content: space-between;
-
-
-    } */
-
-    /* .project-list{ */
+    /* hides tab-content if associated radio is not checked*/
     .tab-content{
       display: none;
-      /* display: flex;
-      flex-direction: column; */
       align-items: center;
       border: 2px solid white;
       padding: 1rem;
@@ -33,15 +26,6 @@ flex-direction: column;
     }
   }
 
-  /* .project-list{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  } */
-
-  /* .experiments{
-    background-color: var(--lt-frosted);
-  } */
 }
 .tab-content * {
     display: flex;
@@ -64,6 +48,8 @@ flex-direction: column;
     opacity: 1;
   }
 }
+
+/* styles added to the radio label when selected */
 .tabs [id^="tab"]:checked + label {
     background: #FFF;
     color: #3498db;
@@ -74,6 +60,8 @@ flex-direction: column;
 	 background-size: 100px 50px;
 }
 
+/* when the tab is :checked we show the
+corresponding div of projects*/
 #tab1:checked ~ #tab-content--1,
 #tab2:checked ~ #tab-content--2,
 #tab3:checked ~ #tab-content--3{
