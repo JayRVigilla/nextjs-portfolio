@@ -1,4 +1,3 @@
-'use client'
 import './Card.css';
 import Image from 'next/image';
 import { Project } from '@/app/content';
