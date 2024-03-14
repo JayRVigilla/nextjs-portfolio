@@ -10,7 +10,7 @@
     align-items: center;
 
     /* hides tab-content if associated radio is not checked*/
-    .tab-content{
+    .tab-content.project-list{
       display: none;
       align-items: center;
       border: 2px solid white;
@@ -34,6 +34,7 @@
     -moz-animation: scale 0.2s ease-in-out;
     animation: scale 0.2s ease-in-out;
 }
+
 @keyframes scale {
   0% {
     transform: scale(0.9);

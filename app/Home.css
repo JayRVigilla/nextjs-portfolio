@@ -11,14 +11,6 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-
-/* .headline {
-  border-radius: 8px;
-  text-align: left;
-  z-index: 1;
-  border: 1px solid red;
-} */
-
 }
 
 
@@ -26,17 +18,10 @@
 .home.container {
   position: relative;
   display: flex;
-  /* flex-direction: column-reverse; */
   flex-direction: column;
   width: 100%;
   height: 60vh;
   justify-content: center;
-  /* border: 1px solid white; */
-  /* background-image: url("./../public/coffee_cup.jpeg"); */
-  /* background-image: url("./../public/hanging_glasses.jpg"); */
-  /* background-image: url("./../public/overhead_cafe.jpg"); */
-  /* background-image: url("./../public/chefs_plating.jpg"); */
-  /* background-image: url("./../public/sidewalk_cafe_night.jpg"); */
   background-image: url("./../public/board_mortar.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -47,7 +32,6 @@
   border-radius: 8px;
   text-align: left;
   z-index: 1;
-  /* border: 1px solid red; */
 }
 }
 

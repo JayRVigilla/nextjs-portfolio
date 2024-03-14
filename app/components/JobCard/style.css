@@ -1,11 +1,9 @@
 .root.job-card {
   font-family: 'Courier New', Courier, monospace;
-  /* font-family: Arial, Helvetica, sans-serif; */
   background-color: white;
   color: black;;
   display: flex;
   flex-direction: column;
-  /* border-radius: 8px; */
   align-items: start;
   padding: 12px;
   margin: 8px;

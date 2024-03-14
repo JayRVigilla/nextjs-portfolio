@@ -49,25 +49,11 @@
     width: 30%;
   }
 
-  80% {
-    border: 10px solid white;
-    height: 20px * 1.5;
-    width: 50%;
-    left: 30%;
-  }
-
   85% {
     border: 12px solid gold;
     height: var(--beam-height);
     width: 60%;
     left: 10%;
-  }
-
-  95% {
-    border: 14px solid lightyellow;
-    background: var(--beam-gradient);
-    width: 70%;
-    left: 5%;
   }
 
   100% {
