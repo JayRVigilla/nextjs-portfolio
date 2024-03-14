@@ -22,24 +22,35 @@ export const Projects = () => {
   return (
     <section className="teaser builds">
       <h2>Projects/Builds</h2>
-      <div id="project-type-selector">
-        <a href="#project-list-projects">projects</a>
-        <a href="#project-list-games">games</a>
-        <a href="#project-list-experiments">experiments</a>
+      <div className="tabs">
+        <input type="radio" name="tabs" id="tab1" />
+          <label htmlFor="tab1"><span>projects</span>
+          </label>
+        <input type="radio" name="tabs" id="tab2"/>
+          <label htmlFor="tab2"><span>games</span>
+          </label>
+        <input type="radio" name="tabs" id="tab3"/>
+          <label htmlFor="tab3"><span>experiments</span>
+          </label>
+
+        <div className='project-list projects tab-content' id="tab-content--1">
+          <h3>Full Projects</h3>
+          {projectCards(projects)}
+          </div>
+
+        <div className='project-list games tab-content' id="tab-content--2">
+          <h3>Games</h3>
+          <p>Just a little fun</p>
+          {projectCards(games)}
+          </div>
+
+        <div className='project-list experiments tab-content' id="tab-content--3">
+          <h3>Experiments</h3>
+          <p>Fun and experimentation in CodeSandbox.</p>
+          {projectCards(experiments)}
+          </div>
+
       </div>
-      <div className='project-list projects' id="project-list-projects">
-        <h3>Full Projects</h3>
-        {projectCards(projects)}
-      </div>
-      <div className='project-list games' id="project-list-games">
-        <h3>Games</h3>
-        <p>Just a little fun</p>
-        {projectCards(games)}
-      </div>
-      <div className='project-list experiments' id="project-list-experiments">
-        <h3>Experiments</h3>
-        <p>Fun and experimentation in CodeSandbox.</p>
-        {projectCards(experiments)}
-      </div>
-    </section>)
+    </section >
+    )
 }
