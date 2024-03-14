@@ -27,3 +27,23 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px){
+  .root.job-card {
+    padding: 8px;
+    width: 480px;
+    max-height: 500px;
+    p{
+      max-width: 470px;
+      max-height: 2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    div.tags{
+      max-height: 64px;
+      scrollbar-width: 4px;
+      overflow-y: scroll;
+    }
+  }
+}

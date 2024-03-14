@@ -1,10 +1,39 @@
 .jobs{
-    background-image: url('./../../../public/cuttingboard.jpg');
-
-    .job-cards{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
+    position: relative;
+    img{
+      height: 100%;
+      width: 100%;
     }
+
+    .content{
+      position: absolute;
+      top: 0;
+      width: 100%;
+
+      .job-cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 10;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px){
+    .jobs{
+    position: relative;
+    height: 1200px;
+
+    img{
+      height: 100%;
+    }
+
+    .content{
+      .job-cards{
+        flex-direction: column;
+        align-content: center;
+      }
+    }
+  }
   }

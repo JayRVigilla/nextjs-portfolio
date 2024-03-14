@@ -1,10 +1,16 @@
 import { experienceContent } from "@/app/content"
 import { JobCard } from "../JobCard"
+import Image from 'next/image'
+import cuttingboard from "@/public/cuttingboard.jpg"
 import './Jobs.css'
 
 export const Jobs = () => {
   return (
-           <section className="teaser jobs">
+    <>
+    <section className="jobs">
+        <Image src={cuttingboard} alt="wood cutting board background image" />
+        <div className="content">
+
           <h2>Experience</h2>
           <div className='job-cards'>
             {experienceContent.map((job) => {
@@ -18,7 +24,9 @@ export const Jobs = () => {
               key={`job-card-${job.businessName.toLowerCase()}`}
               />
             })}
+            </div>
           </div>
         </section>
+            </>
   )
 }
