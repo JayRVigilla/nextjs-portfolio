@@ -57,10 +57,11 @@
   }
 
   @keyframes changeBg{
-   0%,100%  {background-image: url("./../public/board_mortar.jpg");}
-   25% {background-image: url("./../public/code1.jpg");}
-   33% {background-image: url("./../public/table_share.jpg");}
-   50% {background-image: url("./../public/code2.jpg");}
-   66% {background-image: url("./../public/bar_seating.jpg");}
-   75% {background-image: url("./../public/code3.jpg");}
+   0%  {background-image: url("./../public/board_mortar.jpg");}
+   20% {background-image: url("./../public/code1.jpg");}
+   /* 33% {background-image: url("./../public/table_share.jpg");} */
+   40% {background-image: url("./../public/table_share.jpg");}
+   60% {background-image: url("./../public/code2.jpg");}
+   80% {background-image: url("./../public/bar_seating.jpg");}
+   100% {background-image: url("./../public/code3.jpg");}
 }
