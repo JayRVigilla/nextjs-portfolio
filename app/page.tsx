@@ -14,9 +14,12 @@ return (
         <header className="home container">
           <div className="headline">
             <BeamIn>
-              <h1>Jay Vigilla
+              <h1>
+                Jay Vigilla
                 <br />
                 <code>Software Engineer</code>
+                <br />
+                <code>Cook to Coder</code>
               </h1>
             </BeamIn>
           </div>

@@ -23,9 +23,9 @@ export const Projects = () => {
     <section className="teaser builds">
       <h2>Projects/Builds</h2>
       <div id="project-type-selector">
-        <button id="#project-list-projects">projects</button>
-        <button id="#project-list-games">games</button>
-        <button id="#project-list-experiments">experiments</button>
+        <a href="#project-list-projects">projects</a>
+        <a href="#project-list-games">games</a>
+        <a href="#project-list-experiments">experiments</a>
       </div>
       <div className='project-list projects' id="project-list-projects">
         <h3>Full Projects</h3>

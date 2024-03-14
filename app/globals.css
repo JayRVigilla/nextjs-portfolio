@@ -52,10 +52,14 @@ code {
 a {
   color: var(--br-orange);
   text-align: justify;
-}
 
-a:visited {
-  color: var(--orange);
+  &:visited {
+    color: var(--orange);
+  }
+
+  &:active {
+    color: var(--br-teal)
+  }
 }
 
 p, li, ul{

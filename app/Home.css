@@ -12,11 +12,12 @@
   -webkit-align-items: center;
   align-items: center;
 
-.headline {
+/* .headline {
   border-radius: 8px;
   text-align: left;
   z-index: 1;
-}
+  border: 1px solid red;
+} */
 
 }
 
@@ -24,62 +25,40 @@
 
 .home.container {
   position: relative;
+  display: flex;
+  /* flex-direction: column-reverse; */
+  flex-direction: column;
   width: 100%;
+  height: 60vh;
+  justify-content: center;
+  /* border: 1px solid white; */
+  /* background-image: url("./../public/coffee_cup.jpeg"); */
+  /* background-image: url("./../public/hanging_glasses.jpg"); */
+  /* background-image: url("./../public/overhead_cafe.jpg"); */
+  /* background-image: url("./../public/chefs_plating.jpg"); */
+  /* background-image: url("./../public/sidewalk_cafe_night.jpg"); */
+  background-image: url("./../public/board_mortar.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; /* Center the image */
 
-  &>img{
-    z-index: -2;
-    max-height: 80%;
-    width: 100%;
-  object-fit: cover;
-  animation: fadeIn ease var(--fade-time);
-  -webkit-animation: fadeIn ease var(--fade-time);
-  -moz-animation: fadeIn ease var(--fade-time);
-  -o-animation: fadeIn ease var(--fade-time);
-  -ms-animation: fadeIn ease var(--fade-time);
-  }
+.headline {
+  border-radius: 8px;
+  text-align: left;
+  z-index: 1;
+  /* border: 1px solid red; */
+}
 }
 
 .teaser{
-  /* border-radius: 6px;
-  padding: .5rem;
-  width: 90%;
-  margin: 1rem 0; */
   border-radius: 8px;
-  box-shadow: 0px 8px 24px var(--orange);
+  box-shadow: 0px 1px 24px var(--orange);
   padding: 16px;
   background-color: var(--lt-frosted);
   margin: 36px;
 }
 
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-
-@-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-
-  @-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-
-  @-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-
-  @-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-
   @media screen and (max-width: --mobile-width-max){
-    /* #Home .headline{
-      bottom: 50%;
-    } */
   }
 
   @media screen and (max-width: --mobile-width-min){
@@ -93,15 +72,5 @@
     #Home h1{
       font-size: 1.5rem;
     }
-    @keyframes blur {
-      0% {filter: blur(20px)}
-      50% {filter: blur(15px)}
-      100% {filter: blur(0px)}
-    }
 
-    @-webkit-keyframes blur{
-      0% { -webkit-filter: blur(20px);}
-      50% {-webkit-filter: blur(15px)}
-      100% { -webkit-filter: blur(0px);}
-    }
   }

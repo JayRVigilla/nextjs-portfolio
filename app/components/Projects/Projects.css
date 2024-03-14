@@ -5,12 +5,13 @@ display: flex;
 flex-direction: column;
 
     align-items: center;
+
     #project-type-selector{
       width: 33%;
       display: flex;
       justify-content: space-between;
 
-
+      
     }
 
     .project-list{
