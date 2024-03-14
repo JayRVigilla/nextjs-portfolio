@@ -12,13 +12,13 @@ return (
       <div id="Home">
         <header className="home container">
           <div className="headline">
-            <BeamIn>
+            {/* <BeamIn>
+            </BeamIn> */}
               <h1>
                 Jay Vigilla
                 <br />
                 <code>Software Engineer</code> | <code>Cook to Coder</code>
               </h1>
-            </BeamIn>
           </div>
         </header>
 

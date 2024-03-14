@@ -28,6 +28,8 @@
   border-radius: 8px;
   text-align: left;
   z-index: 1;
+  background-color: var(--drk-frosted);
+  padding: 0 12px;
 }
 }
 
