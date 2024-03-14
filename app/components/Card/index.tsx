@@ -1,8 +1,7 @@
 'use client'
 import './Card.css';
 import Image from 'next/image';
-import { ImageData } from '@/app/types';
-import { Project } from '@/app/projects/content';
+import { Project } from '@/app/content';
 
 /**
  * Container for picture and div holding an h2 and text
