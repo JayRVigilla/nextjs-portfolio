@@ -8,7 +8,7 @@ export const Jobs = () => {
   return (
     <>
     <section className="jobs">
-        <Image src={cuttingboard} alt="wood cutting board background image" />
+        <Image src={cuttingboard} alt="wood cutting board background image" priority/>
         <div className="content">
 
           <h2>Experience</h2>
