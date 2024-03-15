@@ -286,7 +286,7 @@ export const games = [
         }]
   },
   {
-    title: "Twister Spinner!",
+    title: "Twister Spinner",
     img: {
       src: "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/1966_Twister_Cover.jpg/220px-1966_Twister_Cover.jpg",
       alt: "Twister game box"
@@ -301,7 +301,7 @@ export const games = [
     ]
   },
   {
-    title: "Jeopadry!",
+    title: "Jeopardy!",
     img: {
       src: "/jeopardy-demo.gif",
       alt: "Jeopardy gameplay"

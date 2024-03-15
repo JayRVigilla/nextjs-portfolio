@@ -23,6 +23,8 @@ export const Projects = () => {
     <section className="teaser builds">
       <h2>Projects/Builds</h2>
       <div className="tabs">
+        <div className="tab-selectors">
+
         <input type="radio" name="tabs" id="tab1" />
           <label htmlFor="tab1"><span>projects</span>
           </label>
@@ -32,6 +34,7 @@ export const Projects = () => {
         <input type="radio" name="tabs" id="tab3"/>
           <label htmlFor="tab3"><span>experiments</span>
           </label>
+        </div>
 
         <div className='project-list projects tab-content' id="tab-content--1">
           <h3>Full Projects</h3>
