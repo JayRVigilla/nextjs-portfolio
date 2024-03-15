@@ -1,6 +1,11 @@
+# NextJS Portfolio: Jay Vigilla 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Things to notice about this project
+1. `react.useState()` is **not** used. This was done to create a strictly server-side rendered app. When `useState` or `useEffect` are used, we must use the client to render and have `'use client'` at the top of each `.tsx` file we access the state (a convention of `NextJS`).
+2. The UI dynamic styling and effects are done entirely with CSS! Utilizing native CSS nesting, flexbox, and some creative selectors.
+
+## Running locally
 
 First, run the development server:
 
