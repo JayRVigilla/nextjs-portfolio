@@ -35,7 +35,9 @@ export const Projects = () => {
           <label htmlFor="tab3"><span>experiments</span>
           </label>
         </div>
-
+        <div className="no-projects-selected">
+          No projects selected.
+        </div>
         <div className='project-list projects tab-content' id="tab-content--1">
           <h3>Full Projects</h3>
           {projectCards(projects)}
