@@ -36,7 +36,7 @@ export const Projects = () => {
           </label>
         </div>
         <div className="no-projects-selected">
-          No projects selected.
+          <code>No projects selected.</code>
         </div>
         <div className='project-list projects tab-content' id="tab-content--1">
           <h3>Full Projects</h3>

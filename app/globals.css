@@ -5,7 +5,7 @@
   --br-blue: '#00779C';
   --brown: rgb(186,171,151);
   --orange: rgb(173,104,62); /* 188,100,49 or #eb5802 for brighter */
-  --orange-frost: rgba(173,104,62, 0.5); /* 188,100,49 or #eb5802 for brighter */
+  --orange-frost: rgba(173,104,62, 0.3); /* 188,100,49 or #eb5802 for brighter */
   --br-orange: #eb5802;
   --teal: rgb(53,101,111); /* 63,119,129 of 00b4d4 for brighter*/
   --lt-teal: rgb(151,166,173);
