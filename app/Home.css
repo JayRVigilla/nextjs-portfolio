@@ -16,9 +16,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   justify-content: center;
-  background-image: url("./../public/board_mortar.jpg");
+  /* background-image: url("./../public/board_mortar.jpg"); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; /* Center the image */
@@ -61,7 +61,6 @@
   @keyframes changeBg{
    0%  {background-image: url("./../public/board_mortar.jpg");}
    20% {background-image: url("./../public/code1.jpg");}
-   /* 33% {background-image: url("./../public/table_share.jpg");} */
    40% {background-image: url("./../public/table_share.jpg");}
    60% {background-image: url("./../public/code2.jpg");}
    80% {background-image: url("./../public/bar_seating.jpg");}
