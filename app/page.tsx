@@ -1,6 +1,5 @@
 import styles from './page.module.css'
 import "./Home.css"
-// import { BeamIn } from './components/BeamIn';
 import { Jobs } from './components/Jobs';
 import { Projects } from './components/Projects';
 import { About } from './components/About';
@@ -12,8 +11,6 @@ return (
       <div id="Home">
         <header className="home container">
           <div className="headline">
-            {/* <BeamIn>
-            </BeamIn> */}
               <h1>
                 Jay Vigilla
                 <br />

@@ -9,56 +9,6 @@ interface Teaser {
   box?: boolean
 }
 
-// const blogTease: Teaser = {
-//   img: {
-//     src: jayDesk,
-//     alt: 'Jay at computer desk',
-//     picWidth: '45%',
-//     fit: "cover",
-//   },
-//   title: 'Blog',
-//   text: ["Thoughts, anecdotes, and code samples..."],
-//   right: true,
-//   link: {
-//     href: "https://babbledotlog.jayvigilla.com/",
-//     text: "init babble.log()"
-//   }
-// }
-
-// const projTease: Teaser = {
-//   img: {
-//     src: notebook,
-//     alt: 'project notebook',
-//     picWidth: '45%',
-//     fit: "contain",
-//   },
-//   title: 'Projects',
-//   text: ["Want to see what I can do? Full stack projects and some classic boardgames in vanillaJS."],
-//   right: undefined,
-//   link: {
-//     href: "/projects",
-//     text: "Come see my Portfolio"
-//   },
-//   box: true
-// }
-
-// const contactTease: Teaser = {
-//   img: {
-//     src: socialPhone,
-//     // src: "/social-phone.jpeg",
-//     alt: 'smart phone ready to send a message',
-//     picWidth: '25%',
-//     fit: "cover",
-//   },
-//   title: 'Connect',
-//   text: ["If you'd like to reach me about projects, both fun and professional, I'd be happy to hear from you. I also love to talk about tech, food, pop culture, and rescue dogs!"],
-//   right: true,
-//   link: {
-//     href: 'mailto: jayrvigilla@gmail.com',
-//     text: "Hit me up"
-//   }
-// }
-
 export const experienceContent = [
 {
   businessName: "Avail Medsystems",
@@ -91,8 +41,6 @@ export const experienceContent = [
     tags: ["JavaScript", "React", "Redux", "CSS", "Jest", "Passport.js", "SendGrid"],
   }
 ]
-
-// export const teasers = [ projTease ]
 
 export interface Project{
   title: string;
@@ -181,6 +129,21 @@ export const projects = [
       //   type: "Link",
       //   url: "https://zhangga-demo.surge.sh/"
       // }
+    ]
+  },
+  {
+    title: "This site!",
+    img: {
+      src: "/you_are_here.jpg",
+      alt: "you are here"
+    },
+    desc: "NextJS Project. React.useState() not used for a fully server-side rendered application.  Much of the UI is done using CSS with native nesting.",
+    tech: ["NextJS", "Typescript", "React", "CSS(nesting, flexbox)"],
+    links: [
+      {
+        type: "Github",
+        url: "https://github.com/JayRVigilla/nextjs-portfolio"
+      },
     ]
   }
 ]
