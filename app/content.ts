@@ -58,18 +58,17 @@ export interface ProjectLink {
 
 export const projects = [
   {
-    title: "NamePicker",
-
+    title: "This site!",
     img: {
-      src: "/namepicker.gif",
-      alt: "NamePicker demo gif"
+      src: "/you_are_here.jpg",
+      alt: "you are here"
     },
-    desc: "I'm a proud parent that wants to make sure my own Hermione Granger doesn't feel stifled by teachers not calling on her when her hand is up first and has been up first for every question... all... month... long. Desktop Electron app using ReactJS.",
-    tech: ["Electron", "ReactJS", "CSS Nesting"],
+    desc: "NextJS Project. React.useState() not used for a fully server-side rendered application.  Much of the UI is done using CSS with native nesting.",
+    tech: ["NextJS", "Typescript", "React", "CSS(nesting, flexbox)"],
     links: [
       {
         type: "Github",
-        url: "https://github.com/JayRVigilla/name_picker"
+        url: "https://github.com/JayRVigilla/nextjs-portfolio"
       },
     ]
   },
@@ -94,7 +93,22 @@ export const projects = [
         // }
       ]
   },
+{
+    title: "NamePicker",
 
+    img: {
+      src: "/namepicker.gif",
+      alt: "NamePicker demo gif"
+    },
+    desc: "I'm a proud parent that wants to make sure my own Hermione Granger doesn't feel stifled by teachers not calling on her when her hand is up first and has been up first for every question... all... month... long. Desktop Electron app using ReactJS.",
+    tech: ["Electron", "ReactJS", "CSS Nesting"],
+    links: [
+      {
+        type: "Github",
+        url: "https://github.com/JayRVigilla/name_picker"
+      },
+    ]
+  },
   {
     title: "MovieSearch",
     img: {
@@ -131,21 +145,6 @@ export const projects = [
       // }
     ]
   },
-  {
-    title: "This site!",
-    img: {
-      src: "/you_are_here.jpg",
-      alt: "you are here"
-    },
-    desc: "NextJS Project. React.useState() not used for a fully server-side rendered application.  Much of the UI is done using CSS with native nesting.",
-    tech: ["NextJS", "Typescript", "React", "CSS(nesting, flexbox)"],
-    links: [
-      {
-        type: "Github",
-        url: "https://github.com/JayRVigilla/nextjs-portfolio"
-      },
-    ]
-  }
 ]
 
 export const experiments = [
@@ -164,7 +163,7 @@ export const experiments = [
           url: "https://codesandbox.io/s/jrv-semantic-buttons-xdi83"
         },
         {
-          type: "Blog Post",
+          type: "Blog",
           url: "https://babbledotlog.jayvigilla.com/pushing-buttons"
         }]
   },
@@ -183,7 +182,7 @@ export const experiments = [
           url: "https://codesandbox.io/s/daytimeslotselector-k80jn"
         },
         {
-          type: "Blog Post",
+          type: "Blog",
           url: "https://babbledotlog.jayvigilla.com/there-i-go-messing-with-time-again"
         }]
   },
