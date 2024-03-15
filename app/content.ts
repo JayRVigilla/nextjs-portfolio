@@ -223,10 +223,7 @@ export const games = [
           type: "CodeSandbox",
           url: "https://codesandbox.io/s/jayvigillawhackamole-50k1in"
         },
-        {
-          type: "Link",
-          url: "https://50k1in.csb.app/"
-        }]
+      ]
   },
   {
     title: "Crocodile Dentist",
