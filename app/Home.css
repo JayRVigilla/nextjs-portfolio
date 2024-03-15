@@ -1,5 +1,5 @@
 #Home {
-  display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: flex; 
   width: 100%;
   flex-direction: column;
   -webkit-box-align: center;
@@ -18,7 +18,6 @@
   width: 100%;
   height: 70vh;
   justify-content: center;
-  /* background-image: url("./../public/board_mortar.jpg"); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; /* Center the image */

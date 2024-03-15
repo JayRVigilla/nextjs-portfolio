@@ -19,7 +19,6 @@ export const JobCard = ({
   tags,
 press
 }: Props) => {
-// }) => {
   return (
     <div className="root job-card">
       <h3> {businessName}</h3>

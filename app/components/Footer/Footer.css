@@ -3,9 +3,7 @@
   width: 100%;
   margin: 1em;
   padding: 1rem;
-  display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  /* flex-direction: column; */
-  /* align-items: center; */
+  display: flex;
   justify-content: space-between;
 
   .content{

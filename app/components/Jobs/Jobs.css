@@ -4,7 +4,8 @@
     max-height: 600px;
     overflow: hidden;
 
-    img{
+    /* cutting board background image: ; */
+    img {
       height: 100%;
       width: 100%;
       object-fit: fill;
@@ -32,10 +33,6 @@
     max-height: none;
     height: 1200px;
     overflow: visible;
-
-    img{
-      height: 100%;
-    }
 
     .content{
       .job-cards{

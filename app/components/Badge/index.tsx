@@ -6,7 +6,6 @@ type tProps = {
 };
 
 export const Badge = ({ title }: tProps) => {
-// export const Badge = ({ title }) => {
   return <div className="root badge">
     <p>{title}</p>
   </div>;

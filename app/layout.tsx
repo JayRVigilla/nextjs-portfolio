@@ -3,14 +3,13 @@ import { Roboto_Mono } from 'next/font/google'
 import './globals.css'
 import Footer from './components/Footer'
 
-// import Font Awesome CSS
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
-const inter = Roboto_Mono({ subsets: ['latin'] }) // * Like
+const inter = Roboto_Mono({ subsets: ['latin'] })
 export const metadata: Metadata = {
-    title: 'Jay Vigilla | Software Engineer | San Francisco',
+    title: 'Jay Vigilla | Software Engineer | San Francisco | ex-Chef',
     description: 'Jay Vigilla is a chef turned Software Engineer based in the San Francisco Bay Area experienced in JavaScript, Typescript, React, Redux, NodeJS, Python, SQL, responsive design, and team management under pressure',
   }
 
