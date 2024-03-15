@@ -1,8 +1,6 @@
 :root {
   --brown-dark: rgb(134,102,89);
-  /* --lt-blue: rgb(222,232, 233); */
   --lt-blue: #dde8e946;
-  /* --lt-blue: rgba(222,232, 233, .5) */
   --blue: rgb(106,137,146); /* 00779c for brighter */
   --br-blue: '#00779C';
   --brown: rgb(186,171,151);
@@ -53,6 +51,7 @@ code {
 a {
   color: var(--br-orange);
   text-align: justify;
+  font-size: 1rem;
 
   &:visited {
     color: var(--orange);
@@ -75,7 +74,6 @@ p, li, ul{
 }
 
 h1,h2,h3{
-  /* color: var(--br-teal); */
   text-shadow: .5px .5px black;
   text-align: center;
 }
@@ -112,5 +110,4 @@ button:active, .button:active{
 
 img{
   background-color: transparent;
-  /* border-radius: 8px; */
 }

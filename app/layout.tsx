@@ -3,6 +3,11 @@ import { Roboto_Mono } from 'next/font/google'
 import './globals.css'
 import Footer from './components/Footer'
 
+// import Font Awesome CSS
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+
 const inter = Roboto_Mono({ subsets: ['latin'] }) // * Like
 export const metadata: Metadata = {
     title: 'Jay Vigilla | Software Engineer | San Francisco',
