@@ -25,7 +25,7 @@ export const Projects = () => {
       <div className="tabs">
         <div className="tab-selectors">
 
-        <input type="radio" name="tabs" id="tab1" />
+        <input type="radio" name="tabs" id="tab1" defaultChecked />
           <label htmlFor="tab1"><span>projects</span>
           </label>
         <input type="radio" name="tabs" id="tab2"/>
