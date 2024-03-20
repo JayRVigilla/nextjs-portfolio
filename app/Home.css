@@ -1,5 +1,5 @@
 #Home {
-  display: flex; 
+  display: flex;
   width: 100%;
   flex-direction: column;
   -webkit-box-align: center;
@@ -39,9 +39,6 @@
   background-color: var(--lt-frosted);
   margin: 36px;
 }
-
-  @media screen and (max-width: --mobile-width-max){
-  }
 
   @media screen and (max-width: --mobile-width-min){
     #Home .headline{

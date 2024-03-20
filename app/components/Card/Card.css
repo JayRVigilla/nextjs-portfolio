@@ -1,4 +1,4 @@
-.Card{
+.Card {
   display: flex;
   flex-direction: column;
   border: 0.5px solid lightgray;
@@ -8,6 +8,7 @@
   margin: .5rem;
   border-radius: 6px;
   justify-content: space-between;
+  max-width: 320px;
 
   & h3{
     margin-top: 0;
@@ -40,19 +41,12 @@
       text-align: center;
     }
 
-}
-
-}
-
-
-
-@media screen and (max-width: calc(--mobile-width-max - 100)){
-  .Card{
-    width: 45%;
   }
+
 }
-@media screen and (max-width: calc(--mobile-width-max - 200)){
-  .Card{
+
+@media screen and (max-width: 900px){
+  .Card {
     width: 100%;
   }
 }
