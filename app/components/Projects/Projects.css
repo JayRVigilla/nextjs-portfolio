@@ -20,7 +20,6 @@
       }
 
       .tab-content * {
-          /* display: flex; */
           flex-flow: row wrap;
           -webkit-animation: scale 0.2s ease-in-out;
           -moz-animation: scale 0.2s ease-in-out;

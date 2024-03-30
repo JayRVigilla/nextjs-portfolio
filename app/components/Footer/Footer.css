@@ -18,7 +18,6 @@
 
       a {
       text-decoration: none;
-      /* padding: 8px; */
       width: 100%;
 
         &:hover {
@@ -28,7 +27,6 @@
 
           /* hide icon and show label when hovering */
           & > span.label {
-            /* position: absolute; */
               display: block;
               font-size: 1.08rem;
               font-weight: 600;
