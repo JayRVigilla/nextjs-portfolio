@@ -25,13 +25,13 @@ function Card({ title, img, desc, tech, links}: Project) {
   return (
     <div className="Card">
       <div className="top">
-        <h3>{title}</h3>
         <Image
           src={img.src}
           alt={img.alt}
           width={400}
           height={400}
-        />
+          />
+        <h3>{title}</h3>
       </div>
 
       <div className="content">
