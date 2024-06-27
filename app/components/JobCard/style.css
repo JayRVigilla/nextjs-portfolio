@@ -1,7 +1,8 @@
 .root.job-card {
   font-family: 'Courier New', Courier, monospace;
   background-color: white;
-  color: black;;
+  color: black;
+  ;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -19,28 +20,29 @@
     margin: 4px 0;
   }
 
-  a{
+  a {
     padding-top: 4px;
 
-    &:hover{
+    &:hover {
       font-weight: bold;
     }
   }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
   .root.job-card {
     padding: 8px;
     width: 480px;
     max-height: 500px;
-    p{
+
+    p.description {
       max-width: 470px;
-      max-height: 2rem;
-      white-space: nowrap;
-      overflow: hidden;
+      max-height: 3rem;
+      overflow-y: scroll;
       text-overflow: ellipsis;
     }
-    div.tags{
+
+    div.tags {
       max-height: 64px;
       scrollbar-width: 4px;
       overflow-y: scroll;

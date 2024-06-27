@@ -37,7 +37,7 @@ function Card({ title, img, desc, tech, links}: Project) {
       <div className="content">
         <p className="indent">{desc}</p>
         <i><p className="techs">{techStr}</p></i>
-        <div>{genLinks}</div>
+        <div className='links'>{genLinks}</div>
       </div>
     </div>
   );

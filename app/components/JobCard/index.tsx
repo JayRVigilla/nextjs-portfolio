@@ -27,7 +27,7 @@ press
           {start} - {end}
         </em>
       </p>
-      <p>{description}</p>
+      <p className="description">{description}</p>
       <div className="tags">
         {tags.map((tag) => (
           <Badge title={tag} key={`${tag}-${businessName}`} />
