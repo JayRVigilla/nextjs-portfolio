@@ -3,6 +3,7 @@ import "./Home.css"
 import { Jobs } from './components/Jobs';
 import { Projects } from './components/Projects';
 import { About } from './components/About';
+import { Blog } from './components/Blog';
 export default function Main() {
 
 return (
@@ -20,6 +21,7 @@ return (
         </header>
 
         <About />
+        <Blog/>
         <Jobs />
         <Projects />
       </div>

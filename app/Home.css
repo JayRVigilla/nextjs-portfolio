@@ -21,7 +21,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; /* Center the image */
-  animation: changeBg 30s infinite;
+  animation: changeBg 45s infinite;
 
 .headline {
   border-radius: 8px;
