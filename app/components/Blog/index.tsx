@@ -10,14 +10,11 @@ export interface BlogProps {
   "data-test-id"?: string;
 }
 
-const TOKEN = "dd187025-f8b1-475d-9b44-eca8db18446b"
-
 async function gql(query: string, variables = {}) {
   const data = await fetch("https://gql.hashnode.com/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": TOKEN,
     },
     body: JSON.stringify({
       query,
