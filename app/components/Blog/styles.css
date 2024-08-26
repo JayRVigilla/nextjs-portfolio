@@ -1,3 +1,9 @@
 section.root.Blog{
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--lt-frosted);
+  border-radius: 8px;
+  margin: 2rem;
 }

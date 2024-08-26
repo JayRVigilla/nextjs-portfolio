@@ -11,6 +11,14 @@ interface Teaser {
 
 export const experienceContent = [
 {
+  businessName: "Career Pathway Institute",
+  start: "05/2024",
+  end: "Present",
+  description: "Non-profit helping professionals on dependent visas with their careers in the U.S.",
+  tags: ["JavaScript", "React", "CSS", "Docker", "Python", "FastAPI", "PostgreSQL"],
+  // press: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html"
+  },
+{
   businessName: "Avail Medsystems",
   start: "04/2022",
   end: "11/2023",
@@ -72,27 +80,27 @@ export const projects = [
       },
     ]
   },
-  {
-    title: "Warbler",
-    img: {
-      src: "/warbler-logo.jpeg",
-      alt: "warbler cartoon"
-    },
-    desc: "A Twitter clone written in Python utilizing Jinja server-side rendering. Full Stack project made at Rithm School.",
-    tech: ["Python", "Flask", "Jinja", "SQLAlchemy", "PostgreSQL", "Heroku"],
-    links:
-      [
-        {
-          type: "GitHub",
-          url: "https://github.com/JayRVigilla/warbler"
-        },
-        // TODO: redeploy backend
-        // {
-        //   type: "Link",
-        //   url: "https://warbler-star.herokuapp.com/"
-        // }
-      ]
-  },
+  // {
+  //   title: "Warbler",
+  //   img: {
+  //     src: "/warbler-logo.jpeg",
+  //     alt: "warbler cartoon"
+  //   },
+  //   desc: "A Twitter clone written in Python utilizing Jinja server-side rendering. Full Stack project made at Rithm School.",
+  //   tech: ["Python", "Flask", "Jinja", "SQLAlchemy", "PostgreSQL", "Heroku"],
+  //   links:
+  //     [
+  //       {
+  //         type: "GitHub",
+  //         url: "https://github.com/JayRVigilla/warbler"
+  //       },
+  //       // TODO: redeploy backend
+  //       // {
+  //       //   type: "Link",
+  //       //   url: "https://warbler-star.herokuapp.com/"
+  //       // }
+  //     ]
+  // },
 {
     title: "NamePicker",
 
@@ -125,26 +133,26 @@ export const projects = [
     ]
   },
 
-  {
-    title: "ZhangGa",
-    img: {
-      src: "/ZhangGa-demo.gif",
-      alt: "Tell your story"
-    },
-    desc: "Full Stack Project. A blogging app with a React frontend and Node-Express server. Project at Rithm School introducing Redux",
-    tech: ["JavaScript", "React.js", "Redux-thunk", "Node.js", "Express", "PostgreSQL"],
-    links: [
-      {
-        type: "Github",
-        url: "https://github.com/JayRVigilla/ZhangGa"
-      },
-      // TODO: redeploy backend
-      // {
-      //   type: "Link",
-      //   url: "https://zhangga-demo.surge.sh/"
-      // }
-    ]
-  },
+  // {
+  //   title: "ZhangGa",
+  //   img: {
+  //     src: "/ZhangGa-demo.gif",
+  //     alt: "Tell your story"
+  //   },
+  //   desc: "Full Stack Project. A blogging app with a React frontend and Node-Express server. Project at Rithm School introducing Redux",
+  //   tech: ["JavaScript", "React.js", "Redux-thunk", "Node.js", "Express", "PostgreSQL"],
+  //   links: [
+  //     {
+  //       type: "Github",
+  //       url: "https://github.com/JayRVigilla/ZhangGa"
+  //     },
+  //     // TODO: redeploy backend
+  //     // {
+  //     //   type: "Link",
+  //     //   url: "https://zhangga-demo.surge.sh/"
+  //     // }
+  //   ]
+  // },
 ]
 
 export const experiments = [
@@ -259,24 +267,24 @@ export const games = [
       },
     ]
   },
-  {
-    title: "Jeopardy!",
-    img: {
-      src: "/jeopardy-demo.gif",
-      alt: "Jeopardy gameplay"
-    },
-    desc: "Frontend Project made at Rithm School using jQuery and the API jService",
-    tech: ["JavaScript", "jQuery", "HTML"],
-    links: [
-      {
-        type: "Github",
-        url: "https://github.com/JayRVigilla/jeopardy"
-      },
-      // TODO: fix logic issue on submitting answer and redeploy
-      // {
-      //   type: "Link",
-      //   url: "http://jih-parody-demo.surge.sh/"
-      // }
-    ]
-  },
+  // {
+  //   title: "Jeopardy!",
+  //   img: {
+  //     src: "/jeopardy-demo.gif",
+  //     alt: "Jeopardy gameplay"
+  //   },
+  //   desc: "Frontend Project made at Rithm School using jQuery and the API jService",
+  //   tech: ["JavaScript", "jQuery", "HTML"],
+  //   links: [
+  //     {
+  //       type: "Github",
+  //       url: "https://github.com/JayRVigilla/jeopardy"
+  //     },
+  //     // TODO: fix logic issue on submitting answer and redeploy
+  //     // {
+  //     //   type: "Link",
+  //     //   url: "http://jih-parody-demo.surge.sh/"
+  //     // }
+  //   ]
+  // },
 ]

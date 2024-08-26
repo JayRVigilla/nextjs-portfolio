@@ -1,7 +1,7 @@
 article.root.BlogCard {
   background-color: white;
   margin: 1rem;
-  padding: 0 1rem;
+  padding: 1rem 0.5rem;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
@@ -14,14 +14,9 @@ article.root.BlogCard {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    padding: 1rem;
-    width: 50%;
+    align-items: center;
+    /* padding: 1rem; */
+    min-width: 40%;
 
-    /* a {
-      h3 {
-        text-align: left;
-      }
-    } */
   }
 }

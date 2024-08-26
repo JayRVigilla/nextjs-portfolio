@@ -25,9 +25,8 @@ export interface BlogCardProps {
   imageLeft?: boolean;
 }
 
-export const BlogCard = ({ blog, imageLeft=false }: BlogCardProps) => {
+export const BlogCard = ({ blog, imageLeft = false }: BlogCardProps) => {
   const {
-    id,
     title,
     url,
     brief,
@@ -39,10 +38,10 @@ export const BlogCard = ({ blog, imageLeft=false }: BlogCardProps) => {
   return (
     <article className={`root BlogCard ${imageLeft && "image-left"}`}>
       <div className="title-container">
-        <a href="">
+        <a href={url} target="_blank" rel="noreferrer">
           <h3>{title}</h3>
         </a>
-      <Image src={imageUrl} alt={slug} width={150} height={150} />
+        <Image src={imageUrl} alt={slug} width={400} height={250} />
       </div>
       <p>{brief}</p>
     </article>

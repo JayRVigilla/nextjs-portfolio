@@ -47,13 +47,8 @@ const GET_USER_ARTICLES = `
   }`;
 
 export const Blog = () => {
-  // * hooks
-  // const hook = () => {};
-
-  // * state
   const [blogs, setBlogs] = useState<any[]>([]);
 
-  // * useEffects
   useEffect(() => {
     const fetchBlogs = async() => {
       const response = await gql(GET_USER_ARTICLES)
@@ -77,9 +72,8 @@ export const Blog = () => {
 
   return (
     <section className="root Blog">
-      <h2>blog</h2>
+      <h2>Blog</h2>
       <div className="card-container">
-        Cards go here
         {blogs.length && (blogs.map((blog, index) => {
           return <BlogCard
             blog={blog} key={blog.id} imageLeft={ index === 0 || index % 2 === 0} />})
