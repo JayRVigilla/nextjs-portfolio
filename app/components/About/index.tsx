@@ -6,7 +6,6 @@ export const About = () => {
 
       <p>{`As a kid, I was a tinkerer. I took things apart and put them back together, slowly understanding what things did and hiding the extra pieces from my parents. Playing with technology and building things is my favorite part of the job. As with my food career, I like hands-on experiences.`}</p>
 
-      {/* <p>{`Check out my blog:`}<a href="https://babbledotlog.jayvigilla.com/" target="_blank" rel="noreferrer"> babble.log()</a></p> */}
     </section>
   )
 }

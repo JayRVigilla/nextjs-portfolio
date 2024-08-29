@@ -1,22 +1,21 @@
 article.root.BlogCard {
   background-color: white;
   margin: 1rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.75rem;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
+  border-radius: 16px;
 
   &.image-left {
     flex-direction: row;
   }
 
   div.title-container {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    /* min-width: 40%; */
+    padding: 0 1rem;
 
   }
 }

@@ -87,7 +87,6 @@ export const Blog = () => {
           target="_blank"
           rel="noreferrer"
         >
-          {" "}
           babble.log()
         </a>
       </p>

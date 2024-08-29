@@ -15,7 +15,6 @@ type tBlog = {
   url: string;
   brief: string;
   slug: string;
-  readTimeInMinutes: number;
   coverImage: tBlogImage;
 };
 
@@ -31,8 +30,7 @@ export const BlogCard = ({ blog, imageLeft = false }: BlogCardProps) => {
     url,
     brief,
     slug,
-    readTimeInMinutes: readTime,
-    coverImage: { url: imageUrl, photographer },
+    coverImage: { url: imageUrl },
   } = blog;
 
   return (
@@ -41,7 +39,7 @@ export const BlogCard = ({ blog, imageLeft = false }: BlogCardProps) => {
         <a href={url} target="_blank" rel="noreferrer">
           <h3>{title}</h3>
         </a>
-        <Image src={imageUrl} alt={slug} width={400} height={250} />
+        <Image src={imageUrl} alt={slug} width={300} height={200} />
       </div>
       <p>{brief}</p>
     </article>
