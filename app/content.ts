@@ -41,13 +41,13 @@ export const experienceContent = [
     description: "SEO and responsive design elements for Shopify and custom static business websites",
     tags: ["Shopify","JavaScript", "React", "CSS", "Lighthouse"],
   },
-  {
-    businessName: "Livestack",
-    start: "5/2020",
-    end: "6/2020",
-    description: "Internship with a live event streaming platform for creators and  educators.",
-    tags: ["JavaScript", "React", "Redux", "CSS", "Jest", "Passport.js", "SendGrid"],
-  }
+  // {
+  //   businessName: "Livestack",
+  //   start: "5/2020",
+  //   end: "6/2020",
+  //   description: "Internship with a live event streaming platform for creators and  educators.",
+  //   tags: ["JavaScript", "React", "Redux", "CSS", "Jest", "Passport.js", "SendGrid"],
+  // }
 ]
 
 export interface Project{
