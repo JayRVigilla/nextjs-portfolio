@@ -21,7 +21,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; /* Center the image */
-  animation: changeBg 45s infinite;
+  animation: changeBg 30s infinite;
 
 .headline {
   border-radius: 8px;
@@ -33,7 +33,7 @@
 }
 
 .teaser{
-  border-radius: 8px;
+  border-radius: 16px;
   box-shadow: 0px 1px 24px var(--orange);
   padding: 16px;
   background-color: var(--lt-frosted);
@@ -55,10 +55,10 @@
   }
 
   @keyframes changeBg{
-   0%  {background-image: url("./../public/board_mortar.jpg");}
-   20% {background-image: url("./../public/code1.jpg");}
-   40% {background-image: url("./../public/table_share.jpg");}
-   60% {background-image: url("./../public/code2.jpg");}
-   80% {background-image: url("./../public/bar_seating.jpg");}
+   /* 0%  {background-image: url("./../public/board_mortar.jpg");} */
+   0% {background-image: url("./../public/code1.jpg");}
+   /* 40% {background-image: url("./../public/table_share.jpg");} */
+   50% {background-image: url("./../public/code2.jpg");}
+   /* 80% {background-image: url("./../public/bar_seating.jpg");} */
    100% {background-image: url("./../public/code3.jpg");}
 }

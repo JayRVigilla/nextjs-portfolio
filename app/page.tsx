@@ -21,8 +21,8 @@ return (
         </header>
 
         <About />
-        <Blog/>
         <Jobs />
+        <Blog/>
         <Projects />
       </div>
     </main>

@@ -34,19 +34,13 @@
   .root.job-card {
     padding: 8px;
     width: 480px;
-    max-height: 500px;
 
     p.description {
-      max-width: 470px;
       max-height: 3rem;
-      overflow-y: scroll;
-      text-overflow: ellipsis;
     }
 
     div.tags {
-      max-height: 64px;
       scrollbar-width: 4px;
-      overflow-y: scroll;
     }
   }
 }

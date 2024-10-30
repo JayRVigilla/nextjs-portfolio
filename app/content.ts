@@ -1,4 +1,4 @@
-import { ImageData, LinkData } from "./types"
+import { ImageData, LinkData } from "./types";
 
 interface Teaser {
   img: ImageData;
@@ -6,40 +6,79 @@ interface Teaser {
   text: string[];
   right: boolean | undefined;
   link: LinkData;
-  box?: boolean
+  box?: boolean;
 }
 
 export const experienceContent = [
-{
-  businessName: "Career Pathway Institute",
-  start: "05/2024",
-  end: "Present",
-  description: "Non-profit helping professionals on dependent visas with their careers in the U.S.",
-  tags: ["JavaScript", "React", "CSS", "Docker", "Python", "FastAPI", "PostgreSQL"],
-  // press: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html"
+  {
+    businessName: "Klaros Group",
+    start: "10/2024",
+    end: "Present",
+    description: "Developing internal web app for financial advisors.",
+    tags: [
+      "NextJS",
+      "SQL",
+      "d3",
+      "Sass",
+      "TypeScript",
+      "Material UI"],
   },
-{
-  businessName: "Avail Medsystems",
-  start: "04/2022",
-  end: "11/2023",
-  description: "Providing simple cost-effective solutions that connect procedural healthcare professionals regardless of location.",
-  tags: ["JavaScript", "TypeScript", "React", "CSS (Sass)", "Redux", "Jest", "Storybook", "Electron", "Splunk"],
-  press: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html"
+  {
+    businessName: "Career Pathway Institute",
+    start: "05/2024",
+    end: "10/2024",
+    description:
+      "Non-profit helping professionals on dependent visas with their careers in the U.S.",
+    tags: [
+      "JavaScript",
+      "React",
+      "CSS",
+      "Docker",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+    ],
+    // press: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html"
+  },
+  {
+    businessName: "Avail Medsystems",
+    start: "04/2022",
+    end: "11/2023",
+    description:
+      "Telepresence platform for the operating room. Allows surgeons to collaborate with specialists in real time.",
+    tags: [
+      "TypeScript",
+      "React",
+      "Sass",
+      "Canvas API", "Storybook",
+      "TwilioVideo"],
+    press:
+      "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html",
   },
   {
     businessName: "Seven.me, Inc",
     start: "04/2021",
     end: "04/2022",
-    description: "Using behavioral coaching and technology to help people lead healthier and happier lives. Lifestyle coaching made available via mobile app.",
-    tags: ["JavaScript", "TypeScript", "React", "CSS", "Redux", "Jest", "React Native", "Expo", "React Query"],
-    press:"https://www.linkedin.com/company/seven.me/"
+    description:
+      "Behavioral coaching and technology to help people lead healthier and happier lives. Lifestyle coaching made available via mobile app.",
+    tags: [
+      "JavaScript",
+      "React",
+      "CSS",
+      "Redux",
+      "Expo",
+      "React Native",
+      "React Query",
+    ],
+    press: "https://www.linkedin.com/company/seven.me/",
   },
   {
     businessName: "Freelance",
     start: "11/2020",
     end: "04/2021",
-    description: "SEO and responsive design elements for Shopify and custom static business websites",
-    tags: ["Shopify","JavaScript", "React", "CSS", "Lighthouse"],
+    description:
+      "SEO and responsive design elements for Shopify and custom static business websites",
+    tags: ["Shopify", "JavaScript", "React", "CSS", "Lighthouse"],
   },
   // {
   //   businessName: "Livestack",
@@ -48,9 +87,9 @@ export const experienceContent = [
   //   description: "Internship with a live event streaming platform for creators and  educators.",
   //   tags: ["JavaScript", "React", "Redux", "CSS", "Jest", "Passport.js", "SendGrid"],
   // }
-]
+];
 
-export interface Project{
+export interface Project {
   title: string;
   img: ImageData;
   desc: string;
@@ -61,7 +100,6 @@ export interface Project{
 export interface ProjectLink {
   type: string;
   url: string;
-
 }
 
 export const projects = [
@@ -69,16 +107,16 @@ export const projects = [
     title: "This site!",
     img: {
       src: "/you_are_here.jpg",
-      alt: "you are here"
+      alt: "you are here",
     },
     desc: "NextJS Project. React.useState() not used for a fully server-side rendered application.  Much of the UI is done using CSS with native nesting.",
     tech: ["NextJS", "Typescript", "React", "CSS(nesting, flexbox)"],
     links: [
       {
         type: "Github",
-        url: "https://github.com/JayRVigilla/nextjs-portfolio"
+        url: "https://github.com/JayRVigilla/nextjs-portfolio",
       },
-    ]
+    ],
   },
   // {
   //   title: "Warbler",
@@ -101,36 +139,43 @@ export const projects = [
   //       // }
   //     ]
   // },
-{
+  {
     title: "NamePicker",
 
     img: {
       src: "/namepicker.gif",
-      alt: "NamePicker demo gif"
+      alt: "NamePicker demo gif",
     },
     desc: "I'm a proud parent that wants to make sure my own Hermione Granger doesn't feel stifled by teachers not calling on her when her hand is up first and has been up first for every question... all... month... long. Desktop Electron app using ReactJS.",
     tech: ["Electron", "ReactJS", "CSS Nesting"],
     links: [
       {
         type: "Github",
-        url: "https://github.com/JayRVigilla/name_picker"
+        url: "https://github.com/JayRVigilla/name_picker",
       },
-    ]
+    ],
   },
   {
     title: "MovieSearch",
     img: {
       src: "/movie-search-demo.gif",
-      alt: "movie search gif"
+      alt: "movie search gif",
     },
     desc: "A Node.js project making HTTP requests to an  IMDB API for movie data. A toy project for testing RapidAPIs",
-    tech: ["JavaScript", "Node.js", "Express", "React", "PostgreSQL", "RapidAPI"],
+    tech: [
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "React",
+      "PostgreSQL",
+      "RapidAPI",
+    ],
     links: [
       {
         type: "Github",
-        url: "https://github.com/JayRVigilla/movie-search"
-      }
-    ]
+        url: "https://github.com/JayRVigilla/movie-search",
+      },
+    ],
   },
 
   // {
@@ -153,46 +198,46 @@ export const projects = [
   //     // }
   //   ]
   // },
-]
+];
 
 export const experiments = [
   {
     title: "Semantic HTML Buttons",
     img: {
       src: "/semanticButtons.jpeg",
-      alt: "CodeSandbox screen shot"
+      alt: "CodeSandbox screen shot",
     },
     desc: "A study in semantic HTML for a blog post",
     tech: ["React", "JavaScript", "HTML", "CSS"],
-    links:
-      [
-        {
-          type: "CodeSandbox",
-          url: "https://codesandbox.io/s/jrv-semantic-buttons-xdi83"
-        },
-        {
-          type: "Blog",
-          url: "https://babbledotlog.jayvigilla.com/pushing-buttons"
-        }]
+    links: [
+      {
+        type: "CodeSandbox",
+        url: "https://codesandbox.io/s/jrv-semantic-buttons-xdi83",
+      },
+      {
+        type: "Blog",
+        url: "https://babbledotlog.jayvigilla.com/pushing-buttons",
+      },
+    ],
   },
   {
     title: "DateTimePicker",
     img: {
       src: "/day_time_slot_picker.jpeg",
-      alt: "CodeSandbox screenshot"
+      alt: "CodeSandbox screenshot",
     },
     desc: "Rough draft of a time picker before integrating API calls for a work project.",
-    tech: ["React", "JavaScript" ],
-    links:
-      [
-        {
-          type: "CodeSandbox",
-          url: "https://codesandbox.io/s/daytimeslotselector-k80jn"
-        },
-        {
-          type: "Blog",
-          url: "https://babbledotlog.jayvigilla.com/there-i-go-messing-with-time-again"
-        }]
+    tech: ["React", "JavaScript"],
+    links: [
+      {
+        type: "CodeSandbox",
+        url: "https://codesandbox.io/s/daytimeslotselector-k80jn",
+      },
+      {
+        type: "Blog",
+        url: "https://babbledotlog.jayvigilla.com/there-i-go-messing-with-time-again",
+      },
+    ],
   },
   // {
   //   title: "",
@@ -213,59 +258,57 @@ export const experiments = [
   //         url: "https://"
   //       }]
   // },
-
-]
+];
 
 export const games = [
   {
     title: "Whack-a-Mole",
     img: {
       src: "/whackAMole.jpeg",
-      alt: "test alt"
+      alt: "test alt",
     },
     desc: "A ReactJS Whack-a-Mole game on CodeSandbox. Adjust amount of moles and time intervals for the moles.",
     tech: ["JavaScript", "React"],
-    links:
-      [
-        {
-          type: "CodeSandbox",
-          url: "https://codesandbox.io/s/jayvigillawhackamole-50k1in"
-        },
-      ]
+    links: [
+      {
+        type: "CodeSandbox",
+        url: "https://codesandbox.io/s/jayvigillawhackamole-50k1in",
+      },
+    ],
   },
   {
     title: "Crocodile Dentist",
     img: {
       src: "/crocodile_dentist.jpeg",
-      alt: "CSS crocodile missing teeth"
+      alt: "CSS crocodile missing teeth",
     },
     desc: "vanillaJS Crocodile Dentist. Pick the wrong tooth and get chomped by the croc! Steve Irwin would approve.",
     tech: ["JavaScript", "HTML", "CSS"],
-    links:
-      [
-        {
-          type: "Github",
-          url: "https://github.com/JayRVigilla/crocodileDentist"
-        },
-        {
-          type: "CodeSandbox",
-          url: "https://codesandbox.io/s/jayvigillacrocodiledentist-2o67ug?file=/script.js"
-        }]
+    links: [
+      {
+        type: "Github",
+        url: "https://github.com/JayRVigilla/crocodileDentist",
+      },
+      {
+        type: "CodeSandbox",
+        url: "https://codesandbox.io/s/jayvigillacrocodiledentist-2o67ug?file=/script.js",
+      },
+    ],
   },
   {
     title: "Twister Spinner",
     img: {
       src: "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/1966_Twister_Cover.jpg/220px-1966_Twister_Cover.jpg",
-      alt: "Twister game box"
+      alt: "Twister game box",
     },
     desc: "For that moment when you just got tired of spinning that little arrow, just pull it up on your phone.",
     tech: ["JavaScript", "React", "Typescript"],
     links: [
       {
         type: "CodeSandbox",
-        url: "https://codesandbox.io/s/twister-spinner-vtwd6k"
+        url: "https://codesandbox.io/s/twister-spinner-vtwd6k",
       },
-    ]
+    ],
   },
   // {
   //   title: "Jeopardy!",
@@ -287,4 +330,4 @@ export const games = [
   //     // }
   //   ]
   // },
-]
+];
