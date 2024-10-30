@@ -2,10 +2,12 @@ export const About = () => {
   return (
     <section className="teaser about">
       <h2>{`About Me`}</h2>
-      <p>{` Hi! I'm Jay, a Front End Engineer the San Francisco Bay Area.`}</p>
+      <br />
+      <p>{`Hi! I'm Jay, a Front End Engineer the San Francisco Bay Area.`}</p>
       <br />
       <p>{`The quick list:`}</p>
       <ul>
+        <li>{`React, Javascript/Typescript, CSS are my go-to tools. And most recently, NextJS!`}</li>
         <li>
           {`I love looking at things from a 50k ft view and learning how the small pieces work to make the big things move.`}
         </li>
