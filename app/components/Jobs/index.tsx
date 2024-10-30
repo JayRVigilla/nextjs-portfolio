@@ -1,19 +1,11 @@
 import { experienceContent } from "@/app/content"
 import { JobCard } from "../JobCard"
-import Image from 'next/image'
-import cuttingboard from "@/public/cuttingboard.jpg"
 import './Jobs.css'
 
 export const Jobs = () => {
   return (
     <>
     <section className="jobs">
-        <Image
-          src={cuttingboard}
-          alt="wood cutting board background image"
-          priority
-          placeholder="blur"
-        />
         <div className="content">
 
           <h2>Experience</h2>

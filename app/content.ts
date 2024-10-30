@@ -10,36 +10,77 @@ interface Teaser {
 }
 
 export const experienceContent = [
-{
-  businessName: "Career Pathway Institute",
-  start: "05/2024",
-  end: "Present",
-  description: "Non-profit helping professionals on dependent visas with their careers in the U.S.",
-  tags: ["JavaScript", "React", "CSS", "Docker", "Python", "FastAPI", "PostgreSQL"],
-  // press: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html"
+  {
+    businessName: "Klaros Group",
+    start: "10/2024",
+    end: "Present",
+    description:
+      "Developing internal web app for financial advisors.",
+    tags: ["NextJS", "TypeScript", "d3", "CSS (Sass)", "SQL"],
   },
-{
-  businessName: "Avail Medsystems",
-  start: "04/2022",
-  end: "11/2023",
-  description: "Providing simple cost-effective solutions that connect procedural healthcare professionals regardless of location.",
-  tags: ["JavaScript", "TypeScript", "React", "CSS (Sass)", "Redux", "Jest", "Storybook", "Electron", "Splunk"],
-  press: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html"
+  {
+    businessName: "Career Pathway Institute",
+    start: "05/2024",
+    end: "10/2024",
+    description:
+      "Non-profit helping professionals on dependent visas with their careers in the U.S.",
+    tags: [
+      "JavaScript",
+      "React",
+      "CSS",
+      "Docker",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+    ],
+    // press: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html"
+  },
+  {
+    businessName: "Avail Medsystems",
+    start: "04/2022",
+    end: "11/2023",
+    description:
+      "Telepresence platform for the operating room. Allows surgeons to collaborate with specialists in real time.",
+    tags: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "CSS (Sass)",
+      "Redux",
+      "Jest",
+      "Storybook",
+      "Electron",
+      "Splunk",
+    ],
+    press:
+      "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html",
   },
   {
     businessName: "Seven.me, Inc",
     start: "04/2021",
     end: "04/2022",
-    description: "Using behavioral coaching and technology to help people lead healthier and happier lives. Lifestyle coaching made available via mobile app.",
-    tags: ["JavaScript", "TypeScript", "React", "CSS", "Redux", "Jest", "React Native", "Expo", "React Query"],
-    press:"https://www.linkedin.com/company/seven.me/"
+    description:
+      "Behavioral coaching and technology to help people lead healthier and happier lives. Lifestyle coaching made available via mobile app.",
+    tags: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "CSS",
+      "Redux",
+      "Jest",
+      "React Native",
+      "Expo",
+      "React Query",
+    ],
+    press: "https://www.linkedin.com/company/seven.me/",
   },
   {
     businessName: "Freelance",
     start: "11/2020",
     end: "04/2021",
-    description: "SEO and responsive design elements for Shopify and custom static business websites",
-    tags: ["Shopify","JavaScript", "React", "CSS", "Lighthouse"],
+    description:
+      "SEO and responsive design elements for Shopify and custom static business websites",
+    tags: ["Shopify", "JavaScript", "React", "CSS", "Lighthouse"],
   },
   // {
   //   businessName: "Livestack",
@@ -48,7 +89,7 @@ export const experienceContent = [
   //   description: "Internship with a live event streaming platform for creators and  educators.",
   //   tags: ["JavaScript", "React", "Redux", "CSS", "Jest", "Passport.js", "SendGrid"],
   // }
-]
+];
 
 export interface Project{
   title: string;
