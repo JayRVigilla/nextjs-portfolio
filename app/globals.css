@@ -2,6 +2,7 @@
   --brown-dark: rgb(134,102,89);
   --lt-blue: #dde8e946;
   --blue: rgb(106,137,146); /* 00779c for brighter */
+  --blue-light-80: rgba(106,137,146, 0.6); /* 00779c for brighter */
   --br-blue: '#00779C';
   --brown: rgb(186,171,151);
   --orange: rgb(173,104,62); /* 188,100,49 or #eb5802 for brighter */

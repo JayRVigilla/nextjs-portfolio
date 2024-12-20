@@ -34,14 +34,14 @@ export const BlogCard = ({ blog, imageLeft = false }: BlogCardProps) => {
   } = blog;
 
   return (
-    <article className={`root BlogCard ${imageLeft && "image-left"}`}>
-      <div className="title-container">
-        <a href={url} target="_blank" rel="noreferrer">
-          <h3>{title}</h3>
-        </a>
-        <Image src={imageUrl} alt={slug} width={300} height={200} />
-      </div>
-      <p>{brief}</p>
-    </article>
+    <a href={url} target="_blank" rel="noreferrer">
+      <article className="root BlogCard">
+        <h3>{title}</h3>
+        <div className={`container ${imageLeft && "image-left"}`}>
+          <Image src={imageUrl} alt={slug} width={300} height={200} />
+          <p>{brief}</p>
+        </div>
+      </article>
+    </a>
   );
 };

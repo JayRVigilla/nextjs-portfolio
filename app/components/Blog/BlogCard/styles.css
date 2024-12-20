@@ -1,21 +1,25 @@
-article.root.BlogCard {
-  background-color: white;
-  margin: 1rem;
-  padding: 1rem 0.75rem;
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  border-radius: 32px;
+a {
+  text-decoration: none;
 
-  &.image-left {
-    flex-direction: row;
-  }
-
-  div.title-container {
+  article.root.BlogCard {
+    background-color: var(--blue-light-80);
+    margin: 1rem;
+    padding: 1.5rem 1.25rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 0 1rem;
+    flex-direction: column;
+    border-radius: 32px;
 
+
+    div.container {
+      gap: 1rem;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+
+      &.image-left {
+        flex-direction: row;
+      }
+    }
   }
 }

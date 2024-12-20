@@ -1,4 +1,4 @@
-section.root.Blog{
+section.root.Blog {
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -6,4 +6,11 @@ section.root.Blog{
   background-color: var(--lt-frosted);
   border-radius: 8px;
   margin: 2rem;
+
+  div.card-container {
+    display: inherit;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
 }

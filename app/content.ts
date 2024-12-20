@@ -11,17 +11,19 @@ interface Teaser {
 
 export const experienceContent = [
   {
-    businessName: "Klaros Group",
+    businessName: "Teal Health",
     start: "10/2024",
     end: "Present",
-    description: "Developing internal web app for financial advisors.",
-    tags: [
-      "NextJS",
-      "SQL",
-      "d3",
-      "Sass",
-      "TypeScript",
-      "Material UI"],
+    description: "Frontend Engineer (contractor) building patient applications",
+    tags: ["NextJS", "Tailwind", "TypeScript", "Storybook"],
+  },
+  {
+    businessName: "Klaros Group",
+    start: "9/2024",
+    end: "Present",
+    description:
+      "Building Klarify  from zero to beta, making federal regulatory data accessible.",
+    tags: ["NextJS", "SQLite", "d3", "Sass", "TypeScript", "Material UI"],
   },
   {
     businessName: "Career Pathway Institute",
@@ -50,8 +52,10 @@ export const experienceContent = [
       "TypeScript",
       "React",
       "Sass",
-      "Canvas API", "Storybook",
-      "TwilioVideo"],
+      "Canvas API",
+      "Storybook",
+      "TwilioVideo",
+    ],
     press:
       "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html",
   },
