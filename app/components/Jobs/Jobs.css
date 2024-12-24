@@ -1,29 +1,30 @@
-.jobs{
+.jobs {
+  width: 100%;
+
+  .content {
     width: 100%;
 
-    .content{
-      width: 100%;
-
-      .job-cards{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+    .job-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
     }
   }
+}
 
 
-  @media screen and (max-width: 1200px){
-    .jobs{
+@media screen and (max-width: 1200px) {
+  .jobs {
     max-height: none;
     overflow: visible;
 
-    .content{
-      .job-cards{
+    .content {
+      .job-cards {
         flex-direction: column;
         align-content: center;
       }
     }
   }
-  }
+}

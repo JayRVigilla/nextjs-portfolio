@@ -22,7 +22,7 @@ export const experienceContent = [
     start: "9/2024",
     end: "Present",
     description:
-      "Building Klarify  from zero to beta, making federal regulatory data accessible.",
+      "Contracted to build Klarify  from zero to beta, making federal regulatory data accessible.",
     tags: ["NextJS", "SQLite", "d3", "Sass", "TypeScript", "Material UI"],
   },
   {
