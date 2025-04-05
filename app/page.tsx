@@ -15,7 +15,7 @@ return (
               <h1>
                 Jay Vigilla
                 <br />
-                <code>Software Engineer</code> | <code>Cook to Coder</code>
+                <code>Software Engineer</code>
               </h1>
           </div>
         </header>

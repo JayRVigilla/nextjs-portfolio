@@ -21,45 +21,58 @@
   justify-content: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center; /* Center the image */
+  background-position: center;
+  background-blend-mode:luminosity;
+  /* Center the image */
   animation: changeBg 30s infinite;
 
-.headline {
-  border-radius: 8px;
-  text-align: left;
-  z-index: 1;
-  background-color: var(--drk-frosted);
-  padding: 0 12px;
-}
+  .headline {
+    border-radius: 8px;
+    text-align: left;
+    z-index: 1;
+    /* background-color: var(--drk-frosted); */
+    background-color: var(--lt-frosted);
+    padding: 0 12px;
+  }
 }
 
-.teaser{
+.teaser {
   border-radius: 16px;
-  box-shadow: 0px 1px 24px var(--orange);
+  box-shadow: 0px 0px 4px var(--accent-color);
   padding: 16px;
   background-color: var(--lt-frosted);
   margin: 36px;
 }
 
-  @media screen and (max-width: --mobile-width-min){
-    #Home .headline{
-      bottom: 30%;
-      left: 0;
-      text-align: center;
-      animation: none;
-      -webkit-animation: blur 2s;
-    }
-    #Home h1{
-      font-size: 1.5rem;
-    }
-
+@media screen and (max-width: --mobile-width-min) {
+  #Home .headline {
+    bottom: 30%;
+    left: 0;
+    text-align: center;
+    animation: none;
+    -webkit-animation: blur 2s;
   }
 
-  @keyframes changeBg{
-   /* 0%  {background-image: url("./../public/board_mortar.jpg");} */
-   0% {background-image: url("./../public/code1.jpg");}
-   /* 40% {background-image: url("./../public/table_share.jpg");} */
-   50% {background-image: url("./../public/code2.jpg");}
-   /* 80% {background-image: url("./../public/bar_seating.jpg");} */
-   100% {background-image: url("./../public/code3.jpg");}
+  #Home h1 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@keyframes changeBg {
+
+  /* 0%  {background-image: url("./../public/board_mortar.jpg");} */
+  0% {
+    background-image: url("./../public/code1.jpg");
+  }
+
+  /* 40% {background-image: url("./../public/table_share.jpg");} */
+  50% {
+    background-image: url("./../public/code2.jpg");
+  }
+
+  /* 80% {background-image: url("./../public/bar_seating.jpg");} */
+  100% {
+    background-image: url("./../public/code3.jpg");
+  }
 }

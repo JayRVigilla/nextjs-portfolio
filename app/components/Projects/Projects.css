@@ -58,7 +58,7 @@
           margin: 0;
 
           &:hover {
-            background-color: var(--orange-frost);
+            background-color: var(--accent-color);
             font-size: 1.15rem;
             font-weight: 700;
             border-color: white;

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 /** blog documentation
  */
 import React, { useEffect, useState } from "react";
@@ -50,8 +50,8 @@ export const Blog = () => {
   const [blogs, setBlogs] = useState<any[]>([]);
 
   useEffect(() => {
-    const fetchBlogs = async() => {
-      const response = await gql(GET_USER_ARTICLES)
+    const fetchBlogs = async () => {
+      const response = await gql(GET_USER_ARTICLES);
 
       const {
         data: {
@@ -61,27 +61,20 @@ export const Blog = () => {
         },
       } = response;
 
-      const receivedBlogs = []
+      const receivedBlogs = [];
       for (let edge of edges) {
-        receivedBlogs.push(edge.node)
+        receivedBlogs.push(edge.node);
       }
-      setBlogs(receivedBlogs)
-    }
-    fetchBlogs()
+      setBlogs(receivedBlogs);
+    };
+    fetchBlogs();
   }, []);
 
   return (
     <section className="root Blog">
       <h2>Blog</h2>
-      <div className="card-container">
-        {blogs.length && (blogs.map((blog, index) => {
-          return <BlogCard
-            blog={blog} key={blog.id} imageLeft={ index === 0 || index % 2 === 0} />})
-        )}
-      </div>
-
       <p>
-        {`Check out more at my blog:`}
+        {`The latest from my blog:`}
         <a
           href="https://babbledotlog.jayvigilla.com/"
           target="_blank"
@@ -90,6 +83,19 @@ export const Blog = () => {
           babble.log()
         </a>
       </p>
+      
+      <div className="card-container">
+        {blogs.length &&
+          blogs.map((blog, index) => {
+            return (
+              <BlogCard
+                blog={blog}
+                key={blog.id}
+                imageLeft={index === 0 || index % 2 === 0}
+              />
+            );
+          })}
+      </div>
     </section>
   );
 };

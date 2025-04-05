@@ -3,7 +3,7 @@ export const About = () => {
     <section className="teaser about">
       <h2>{`About Me`}</h2>
       <br />
-      <p>{`Hi! I'm Jay, a Front End Engineer the San Francisco Bay Area.`}</p>
+      <p>{`Hi! I'm Jay, a Software Engineer the San Francisco Bay Area.`}</p>
       <br />
       <p>{`The quick list:`}</p>
       <ul>
@@ -15,8 +15,9 @@ export const About = () => {
         <li>{`Puns are my love language.`}</li>
       </ul>
 
+      <p>READ MORE LINK</p>
       <br />
-      <p>{`As a kid, I was a tinkerer. I took things apart and (mostly) put them back together. Luckily, my parents were patient. I took the time to understand what things did and hiding the spare pieces from my parents. Playing with technology and building things is my favorite part of the job.`}</p>
+      <p>{`As a kid, I was a tinkerer who took things apart and (mostly) put them back together. Luckily, my parents were patient. I took the time to understand what things did and hiding the spare pieces from my parents. Playing with technology and building things is my favorite part of the job.`}</p>
     </section>
   );
 };

@@ -1,21 +1,37 @@
 :root {
-  --brown-dark: rgb(134,102,89);
-  --lt-blue: #dde8e946;
-  --blue: rgb(106,137,146); /* 00779c for brighter */
-  --blue-light-80: rgba(106,137,146, 0.6); /* 00779c for brighter */
-  --br-blue: '#00779C';
-  --brown: rgb(186,171,151);
-  --orange: rgb(173,104,62); /* 188,100,49 or #eb5802 for brighter */
-  --orange-frost: rgba(173,104,62, 0.3); /* 188,100,49 or #eb5802 for brighter */
-  --br-orange: #eb5802;
-  --teal: rgb(53,101,111); /* 63,119,129 of 00b4d4 for brighter*/
-  --lt-teal: rgb(151,166,173);
+
+  /* Pure White */
+  --bg-color: #FFFFFF;
+
+  /* Deep Navy Blue */
+  --primary-color: rgba(0, 51, 102, 1);
+  --primary-color-10: rgba(0, 51, 102, .1);
+  /* --primary-color: #003366; */
+  --primary-color2: rgba(0, 102, 204, 1);
+  --primary-color1-10: rgba(0, 102, 204, .1);
+  /* --primary-color2: #0066CC; */
+
+  /* Strong Orange */
+  --accent-color: rgba(255, 101, 0, 1);
+  --accent-color-10: rgba(255, 101, 0, .1);
+  --accent-color-60: rgba(255, 101, 0, .6);
+  /* --accent-color: #FF6500; */
+  --accent-color2: rgba(255, 85, 0, 1);
+  --accent-color2-10: rgba(255, 85, 0, .1);
+  /* --accent-color2: #FF5500; */
+
+  /* Dark Charcoal */
+  --text-color: #1A1A1A;
+
+  --border-color: #DDDDDD;
+
+  /* old below */
+  --lt-teal: rgb(151, 166, 173);
   --br-teal: #00b4d4;
-  --white: rgb(220,214,207);
-  --frosted: rgba(255,255,255, 0.55);
-  --drk-frosted: rgba(0,0,0, 0.55);
-  --lt-frosted: rgba(255,255,255, 0.20);
-  --br-orange09: #EB580219;
+  --drk-frosted: rgba(0, 0, 0, 0.55);
+  --lt-frosted20: rgba(255, 255, 255, 0.20);
+  /* --lt-frosted: rgba(255, 255, 255, 0.50); */
+  --lt-frosted: rgba(255, 255, 255, 0.7);
 
   /*
   Doesn't seem to work: use as documentation
@@ -26,6 +42,7 @@
   --slide-time: 1.3s;
   --slide-delay-time: .5s;
 
+  /* transition: all 0.3s ease-in-out; */
 }
 
 html {
@@ -34,8 +51,8 @@ html {
 }
 
 body {
-  background-color: black;
-  color: var(--br-teal);
+  background-color: var(--bg-color);
+  color: var(--primary-color2);
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -49,12 +66,12 @@ body {
 }
 
 code {
-    font-family: 'Source Code Pro', monospace;
-    color: var(--br-orange);
+  font-family: 'Source Code Pro', monospace;
+  color: var(--accent-color2);
 }
 
 a {
-  color: var(--br-orange);
+  color: var(--accent-color2);
   text-align: justify;
   font-size: 1rem;
 
@@ -66,25 +83,26 @@ a {
     color: var(--br-teal)
   }
 
-  &:hover{
-    font-weight: 800;
-    font-size: 1.03rem;
+  &:hover {
+    font-size: 101%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 .25rem var(--accent-color-60);
   }
 }
 
-p, li, ul{
+p, li, ul {
   list-style-type: none;
   margin: .6em 0;
   text-align: left;
 }
 
-h1,h2,h3{
+h1, h2, h3 {
   text-shadow: .5px .5px black;
   text-align: center;
 }
 
-button, .button{
-  background-color: var(--br-orange);
+button, .button {
+  background-color: var(--accent-color2);
   margin: 2rem 1rem;
   padding: 1rem;
   color: white;
@@ -92,27 +110,30 @@ button, .button{
   border-radius: 16px;
 }
 
-button{
+button {
   padding: 0;
   font-size: large;
   font-weight: bolder;
 }
 
-button:hover, .button:hover{
-  color: var(--teal);
+button:hover, .button:hover {
+  color: var(--primary-color);
   opacity: 0.8;
   box-shadow: 2px 4px var(--br-teal);
+  transition: all 0.3s ease-in-out;
 }
 
-button:visited, .button:visited{
+button:visited, .button:visited {
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 
-button:active, .button:active{
+button:active, .button:active {
   background-color: var(--lt-teal);
-  color: var(--br-orange);
+  color: var(--accent-color2);
+  transition: all 0.3s ease-in-out;
 }
 
-img{
+img {
   background-color: transparent;
 }

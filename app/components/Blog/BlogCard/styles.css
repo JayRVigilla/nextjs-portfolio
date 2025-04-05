@@ -1,21 +1,29 @@
 a {
+  --border-radius: 1.5rem;
+
   text-decoration: none;
+  padding: 0;
+  border-radius: var(--border-radius);
 
   article.root.BlogCard {
-    background-color: var(--blue-light-80);
-    margin: 1rem;
-    padding: 1.5rem 1.25rem;
+    background-color: var(--primary-color-10);
+    padding: 1.5rem 2.25rem;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 32px;
-
+    border-radius: var(--border-radius);
 
     div.container {
-      gap: 1rem;
+      gap: 2rem;
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
+
+      p {
+        max-height: 8.25rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
 
       &.image-left {
         flex-direction: row;

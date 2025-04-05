@@ -20,7 +20,7 @@ export const experienceContent = [
   {
     businessName: "Klaros Group",
     start: "9/2024",
-    end: "Present",
+    end: "12/2024",
     description:
       "Contracted to build Klarify  from zero to beta, making federal regulatory data accessible.",
     tags: ["NextJS", "SQLite", "d3", "Sass", "TypeScript", "Material UI"],
