@@ -46,6 +46,14 @@
   --slide-delay-time: .5s;
 
   /* transition: all 0.3s ease-in-out; */
+
+  --nav-z-index: 200;
+
+  --hover-styles: {
+    opacity: 0.8;
+    font-size: 101%;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 html {
@@ -65,6 +73,7 @@ body {
   align-items: center;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
+  overflow-y: scroll;
   font-display: swap;
 }
 
@@ -78,9 +87,9 @@ a {
   text-align: justify;
   font-size: 1rem;
 
-  &:visited {
+  /* &:visited {
     color: var(--orange);
-  }
+  } */
 
   &:active {
     color: var(--primary-color2)
@@ -99,7 +108,7 @@ p, li, ul {
 }
 
 h1, h2, h3 {
-  text-shadow: .5px .5px black;
+  /* text-shadow: .5px .5px black; */
   text-align: center;
 }
 
@@ -121,7 +130,6 @@ button {
 button:hover, .button:hover {
   color: var(--primary-color);
   opacity: 0.8;
-  /* box-shadow: 2px 4px var(--primary-color2); */
   font-size: 101%;
   transition: all 0.3s ease-in-out;
 }
