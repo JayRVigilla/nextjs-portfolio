@@ -38,7 +38,7 @@ export const BlogCard = ({ blog, imageLeft = false }: BlogCardProps) => {
       <article className="root BlogCard">
         <h3>{title}</h3>
         <div className={`container ${imageLeft && "image-left"}`}>
-          <Image src={imageUrl} alt={slug} width={300} height={200} />
+          <Image src={imageUrl} alt={slug} width={240} height={160} />
           <p>{brief}</p>
         </div>
       </article>

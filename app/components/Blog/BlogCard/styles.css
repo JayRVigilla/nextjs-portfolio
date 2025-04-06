@@ -30,4 +30,9 @@ a {
       }
     }
   }
+
+}
+
+a:hover {
+  box-shadow: 0 0 .25rem var(--accent-color-60);
 }

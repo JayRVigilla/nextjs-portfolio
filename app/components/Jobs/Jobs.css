@@ -20,11 +20,11 @@
     max-height: none;
     overflow: visible;
 
-    .content {
+    /* .content {
       .job-cards {
         flex-direction: column;
         align-content: center;
       }
-    }
+    } */
   }
 }

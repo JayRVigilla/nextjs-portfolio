@@ -1,5 +1,5 @@
 .root.job-card {
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   background-color: white;
   color: black;
   ;
@@ -7,8 +7,6 @@
   flex-direction: column;
   align-items: start;
   padding: 12px;
-  /* margin: 8px; */
-  /* width: 250px; */
   width: 240px;
   min-height: 200px;
   border: 2px solid white;

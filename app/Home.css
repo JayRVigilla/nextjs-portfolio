@@ -12,26 +12,22 @@
 
 
 .home.container {
-  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 70vh;
-  max-height: 720px;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-blend-mode:luminosity;
-  /* Center the image */
+  background-size: cover;
   animation: changeBg 30s infinite;
 
   .headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 8px;
     text-align: left;
     z-index: 1;
-    /* background-color: var(--drk-frosted); */
-    background-color: var(--lt-frosted);
+    height: 100%;
+    background-color: var(--black95);
     padding: 0 12px;
   }
 }
@@ -61,17 +57,14 @@
 
 @keyframes changeBg {
 
-  /* 0%  {background-image: url("./../public/board_mortar.jpg");} */
   0% {
     background-image: url("./../public/code1.jpg");
   }
 
-  /* 40% {background-image: url("./../public/table_share.jpg");} */
   50% {
     background-image: url("./../public/code2.jpg");
   }
 
-  /* 80% {background-image: url("./../public/bar_seating.jpg");} */
   100% {
     background-image: url("./../public/code3.jpg");
   }

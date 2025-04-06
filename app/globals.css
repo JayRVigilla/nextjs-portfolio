@@ -21,17 +21,20 @@
   /* --accent-color2: #FF5500; */
 
   /* Dark Charcoal */
-  --text-color: #1A1A1A;
+  --black: rgba(26, 26, 26, 1);
+  --black40: rgba(26, 26, 26, .4);
+  --black70: rgba(26, 26, 26, .75);
+  --black95: rgba(26, 26, 26, .95);
 
   --border-color: #DDDDDD;
 
   /* old below */
   --lt-teal: rgb(151, 166, 173);
-  --br-teal: #00b4d4;
+  /* --br-teal: #00b4d4; */
   --drk-frosted: rgba(0, 0, 0, 0.55);
   --lt-frosted20: rgba(255, 255, 255, 0.20);
-  /* --lt-frosted: rgba(255, 255, 255, 0.50); */
-  --lt-frosted: rgba(255, 255, 255, 0.7);
+  --lt-frosted50: rgba(255, 255, 255, 0.5);
+  --lt-frosted: rgba(255, 255, 255, 0.8);
 
   /*
   Doesn't seem to work: use as documentation
@@ -80,13 +83,12 @@ a {
   }
 
   &:active {
-    color: var(--br-teal)
+    color: var(--primary-color2)
   }
 
   &:hover {
     font-size: 101%;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 .25rem var(--accent-color-60);
   }
 }
 
@@ -119,7 +121,8 @@ button {
 button:hover, .button:hover {
   color: var(--primary-color);
   opacity: 0.8;
-  box-shadow: 2px 4px var(--br-teal);
+  /* box-shadow: 2px 4px var(--primary-color2); */
+  font-size: 101%;
   transition: all 0.3s ease-in-out;
 }
 
