@@ -1,12 +1,13 @@
 .jobs {
   width: 100%;
+  margin: 2rem 0;
 
   .content {
     width: 100%;
 
     .job-cards {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;

@@ -1,39 +1,57 @@
 import React from "react";
 import "./style.css";
 import { Badge } from "../Badge";
+import Link from "next/link";
+import { LinkData } from "@/app/types";
+import { iExperience } from "@/app/content";
+import Image from "next/image";
 
 interface Props {
-  businessName: string;
-  start: string;
-  end: string;
-  description: string;
-  press?: string;
-  tags: string[];
+  job: iExperience;
 }
 
-export const JobCard = ({
-  businessName,
-  start,
-  end,
-  description,
-  tags,
-press
-}: Props) => {
+export const JobCard = ({ job }: Props) => {
+  const { businessName, start, end, description, tags, links, img } = job;
+
   return (
-    <div className="root job-card">
-      <h3> {businessName}</h3>
-      <p>
-        <em>
-          {start} - {end}
-        </em>
-      </p>
-      <p className="description">{description}</p>
-      <div className="tags">
+    <article className="root job-card">
+      <div className="details">
+        <div className="basics">
+          <span>
+            <h3> {businessName}</h3>
+            <p>
+              <em>
+                {start} - {end}
+              </em>
+            </p>
+          </span>
+          <p className="description">{description}</p>
+        </div>
+        {img && (
+          <Image src={img?.src} alt={img?.alt} width={300} height={200} />
+        )}
+      </div>
+      <div className="links">
+        {links?.length &&
+          links.map((link) => {
+            return (
+              <Link
+                href={link.href}
+                rel="noreferrer"
+                target="_blank"
+                key={link.text}
+              >
+                {link.text}
+              </Link>
+            );
+          })}
+      </div>
+
+      {/* <div className="tags">
         {tags.map((tag) => (
           <Badge title={tag} key={`${tag}-${businessName}`} />
-          ))}
-      </div>
-      {press && <a href={press} rel="noreferrer" target="_blank" >Press Link</a>}
-    </div>
+        ))}
+      </div> */}
+    </article>
   );
 };

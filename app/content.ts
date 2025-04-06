@@ -9,20 +9,51 @@ interface Teaser {
   box?: boolean;
 }
 
-export const experienceContent = [
+export interface iExperience {
+  businessName: string;
+  start: string;
+  end: string;
+  description: string;
+  tags: string[];
+  links?: LinkData[];
+  img?: ImageData;
+}
+
+export const experienceContent: iExperience[] = [
   {
     businessName: "Teal Health",
     start: "10/2024",
     end: "Present",
-    description: "Frontend Engineer (contractor) building patient applications",
-    tags: ["NextJS", "Tailwind", "TypeScript", "Storybook"],
+    description:
+      "Frontend Engineer (contractor) building patient applications that provide people with wombs the tools, access, and resources needed to make their own, informed decisions regarding their health — starting with cervical cancer screenings.",
+    tags: [
+      "NextJS",
+      "Tailwind",
+      "TypeScript",
+      "React Query",
+      "Cypress",
+      "Storybook",
+    ],
+    links: [
+      { text: "Website", href: "https://www.getteal.com/" },
+      {
+        text: "Press",
+        href: "https://www.prnewswire.com/news-releases/teal-health-unveils-landmark-study-results-showing-teal-wand-self-collected-samples-match-clinician-collected-samples-302404923.html",
+      },
+    ],
+    img: {
+      src: "https://cdn.prod.website-files.com/63d5330e6841081487be0bd6/63d5852c684108ca37c552f1_LogoPrimary.svg",
+      alt: "Teal Health logo",
+      // picWidth: "",
+      // fit: "",
+    },
   },
   {
     businessName: "Klaros Group",
     start: "9/2024",
     end: "12/2024",
     description:
-      "Contracted to build Klarify  from zero to beta, making federal regulatory data accessible.",
+      "Contracted to build Klarify, an app allowing financial researchers to view and query Federal Financial datasets, making federal regulatory data accessible.",
     tags: ["NextJS", "SQLite", "d3", "Sass", "TypeScript", "Material UI"],
   },
   {
@@ -40,7 +71,17 @@ export const experienceContent = [
       "FastAPI",
       "PostgreSQL",
     ],
-    // press: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html"
+    links: [
+      { text: "Website", href: "https://www.careerpathway.info/" },
+      {
+        text: "Press Link",
+        href: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html",
+      },
+    ],
+    img: {
+      src: "https://static.wixstatic.com/media/77983c_75d9600633794fed8b2dc16243aa3842~mv2.png/v1/fill/w_151,h_52,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/CPI_logo_color_H.png",
+      alt: "CPI logo",
+    },
   },
   {
     businessName: "Avail Medsystems",
@@ -56,8 +97,16 @@ export const experienceContent = [
       "Storybook",
       "TwilioVideo",
     ],
-    press:
-      "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html",
+    links: [
+      {
+        text: "Press Link",
+        href: "https://www.prnewswire.com/news-releases/avail-medsystems-adds-new-capability-to-host-third-party-clinical-software-applications-in-the-operating-room-as-part-of-several-platform-enhancements-301959048.html",
+      },
+    ],
+    img: {
+      src: "https://media.licdn.com/dms/image/v2/C560BAQFIO_ZYf1U5Ng/company-logo_200_200/company-logo_200_200/0/1656622121902/avail_medsystems_logo?e=1749686400&v=beta&t=Xv539g1N5tsZ8MHDqotRs8zO2Cb4BSCOrQCcfudhIjA",
+      alt: 'Avail logo'
+    },
   },
   {
     businessName: "Seven.me, Inc",
@@ -74,7 +123,12 @@ export const experienceContent = [
       "React Native",
       "React Query",
     ],
-    press: "https://www.linkedin.com/company/seven.me/",
+    links: [
+      {
+        text: "LinkedIn",
+        href: "https://www.linkedin.com/company/seven.me/",
+      },
+    ],
   },
   {
     businessName: "Freelance",
