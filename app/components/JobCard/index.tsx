@@ -28,7 +28,7 @@ export const JobCard = ({ job }: Props) => {
           <p className="description">{description}</p>
         </div>
         {img && (
-          <Image src={img?.src} alt={img?.alt} width={300} height={200} />
+          <Image src={img?.src} alt={img?.alt} width={150} height={100} />
         )}
       </div>
       <div className="links">

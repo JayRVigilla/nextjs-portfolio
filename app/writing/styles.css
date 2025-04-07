@@ -11,6 +11,9 @@ section.root.Blog {
     margin-top: 1rem;
     display: inherit;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 240px;
     gap: 1rem;
   }
 

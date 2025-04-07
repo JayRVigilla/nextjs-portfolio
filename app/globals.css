@@ -4,6 +4,7 @@
   --bg-color: #FFFFFF;
 
   /* Deep Navy Blue */
+  /* --primary-color: #003366; */
   --primary-color: rgba(0, 51, 102, 1);
   --primary-color-10: rgba(0, 51, 102, .1);
   /* --primary-color: #003366; */
@@ -57,7 +58,7 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--primary-color2);
-  margin: 4rem 0;
+  margin: 4rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,10 +81,6 @@ a {
   text-align: justify;
   font-size: 1rem;
 
-  /* &:visited {
-    color: var(--orange);
-  } */
-
   &:active {
     color: var(--primary-color2)
   }
@@ -96,7 +93,7 @@ a {
 
 p, li, ul {
   list-style-type: none;
-  margin: .6em 0;
+  margin: .6em 0 .1rem;
   text-align: left;
 }
 

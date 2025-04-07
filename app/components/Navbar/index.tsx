@@ -15,7 +15,7 @@ const PATHS = [
   { label: "bio", path: "/bio" },
   { label: "writing", path: "/writing" },
   { label: "work", path: "/work" },
-  { label: "else", path: "/else" },
+  // { label: "else", path: "/else" },
 ];
 
 export const Navbar = (props: iNavbarProps) => {

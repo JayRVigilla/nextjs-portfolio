@@ -5,19 +5,21 @@ article.root.job-card {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
+  justify-content: space-between;
   min-height: 200px;
   box-shadow: 0 0 1rem var(--accent-color2-50);
+  gap: 1rem;
 
   div.details {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 1rem;
-    /* align-items: center; */
+    align-items: center;
 
     div.basics {
-      width: 50%;
+      width: 60%;
 
       span {
         display: flex;

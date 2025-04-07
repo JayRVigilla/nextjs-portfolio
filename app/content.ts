@@ -44,8 +44,6 @@ export const experienceContent: iExperience[] = [
     img: {
       src: "https://cdn.prod.website-files.com/63d5330e6841081487be0bd6/63d5852c684108ca37c552f1_LogoPrimary.svg",
       alt: "Teal Health logo",
-      // picWidth: "",
-      // fit: "",
     },
   },
   {
@@ -55,6 +53,10 @@ export const experienceContent: iExperience[] = [
     description:
       "Contracted to build Klarify, an app allowing financial researchers to view and query Federal Financial datasets, making federal regulatory data accessible.",
     tags: ["NextJS", "SQLite", "d3", "Sass", "TypeScript", "Material UI"],
+    img: {
+      src: "https://media.licdn.com/dms/image/v2/C560BAQEWQLMT2QNdeg/company-logo_200_200/company-logo_200_200/0/1636567043623/klaros_group_logo?e=1749686400&v=beta&t=-HMS8CNTBW2SznSlYmR63_InUQNCn_SD_qXDDzGSQps",
+      alt: "Klaros logo",
+    },
   },
   {
     businessName: "Career Pathway Institute",
@@ -105,7 +107,7 @@ export const experienceContent: iExperience[] = [
     ],
     img: {
       src: "https://media.licdn.com/dms/image/v2/C560BAQFIO_ZYf1U5Ng/company-logo_200_200/company-logo_200_200/0/1656622121902/avail_medsystems_logo?e=1749686400&v=beta&t=Xv539g1N5tsZ8MHDqotRs8zO2Cb4BSCOrQCcfudhIjA",
-      alt: 'Avail logo'
+      alt: "Avail logo",
     },
   },
   {
@@ -129,6 +131,10 @@ export const experienceContent: iExperience[] = [
         href: "https://www.linkedin.com/company/seven.me/",
       },
     ],
+    img: {
+      src: "https://media.licdn.com/dms/image/v2/C560BAQG-CXwuDMmE0g/company-logo_200_200/company-logo_200_200/0/1630604877677/sevenme_logo?e=1749686400&v=beta&t=aPEeTtBFqhQCejZOecDjktX7XLlw5TOpLI8_L3hFOEA",
+      alt: "Seven.me logo",
+    },
   },
   {
     businessName: "Freelance",

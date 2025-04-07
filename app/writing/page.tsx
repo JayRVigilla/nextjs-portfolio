@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 
 import "./styles.css";
 import { BlogCard } from "@components/Blog/BlogCard";
+import { HashLoader } from "react-spinners";
 
 export interface BlogProps {
   "data-test-id"?: string;
@@ -85,16 +86,21 @@ export default function Blog() {
       </p>
 
       <div className="card-container">
-        {blogs.length &&
-          blogs.map((blog, index) => {
-            return (
-              <BlogCard
-                blog={blog}
-                key={blog.id}
-                imageLeft={index === 0 || index % 2 === 0}
-              />
-            );
-          })}
+        {blogs.length ? (
+          <>
+            {blogs.map((blog, index) => {
+              return (
+                <BlogCard
+                  blog={blog}
+                  key={blog.id}
+                  imageLeft={index === 0 || index % 2 === 0}
+                />
+              );
+            })}
+          </>
+        ) : (
+          <HashLoader color="#003366" />
+        )}
       </div>
     </section>
   );

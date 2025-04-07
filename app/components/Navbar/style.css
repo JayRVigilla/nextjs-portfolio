@@ -18,13 +18,14 @@ nav.root.navbar {
   a {
     text-decoration: none;
     text-align: justify;
-    text-transform: uppercase;
+    text-transform: lowercase;
 
     &.current {
-      text-decoration: underline;
+      /* text-decoration: underline; */
       font-size: 101%;
       font-weight: 600;
       transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
     }
 
 
@@ -33,6 +34,7 @@ nav.root.navbar {
       font-size: 105%;
       font-weight: 600;
       transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
     }
 
     img {
