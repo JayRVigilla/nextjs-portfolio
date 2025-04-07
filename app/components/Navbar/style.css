@@ -21,7 +21,6 @@ nav.root.navbar {
     text-transform: lowercase;
 
     &.current {
-      /* text-decoration: underline; */
       font-size: 101%;
       font-weight: 600;
       transition: all 0.3s ease-in-out;

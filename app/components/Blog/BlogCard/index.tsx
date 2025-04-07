@@ -35,7 +35,6 @@ export const BlogCard = ({ blog, imageLeft = false }: BlogCardProps) => {
   } = blog;
 
   return (
-    // <a href={url} target="_blank" rel="noreferrer">
     <Link className="root BlogCard" href={url} target="_blank" rel="noreferrer">
       <article className="root BlogCard">
         <h3>{title}</h3>
@@ -44,7 +43,6 @@ export const BlogCard = ({ blog, imageLeft = false }: BlogCardProps) => {
           <p>{brief}</p>
         </div>
       </article>
-      {/* </a> */}
     </Link>
   );
 };

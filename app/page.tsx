@@ -1,8 +1,4 @@
-// import styles from "./page.module.css";
 import "./Home.css";
-import { Jobs } from "@components/Jobs";
-import { About } from "@components/About";
-import { Blog } from "@components/Blog";
 export default function Main() {
   return (
         <div id="Home">
