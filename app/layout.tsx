@@ -10,8 +10,8 @@ config.autoAddCss = false;
 
 const inter = Font({ subsets: ["latin"], weight: ["400", "700"] });
 export const metadata: Metadata = {
-    title: 'Jay Vigilla | Software Engineer | San Francisco | ex-Chef',
-    description: 'Jay Vigilla is a chef turned Software Engineer based in the San Francisco Bay Area experienced in JavaScript, Typescript, React, Redux, NodeJS, Python, SQL, responsive design, and team management under pressure',
+    title: 'Jay Vigilla | Software Engineer | San Francisco',
+    description: 'Jay Vigilla is a Front End Software Engineer in the San Francisco Bay Area experienced in JavaScript, Typescript, React, Redux, NodeJS, Python, SQL, mentorship, and team management under pressure',
   }
 
   export default function RootLayout({
